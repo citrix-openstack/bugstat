@@ -76,7 +76,7 @@ def to_dict(obj):
 class Task(object):
     def __init__(self, lptask):
         self.web_link = lptask.web_link
-        self.title = lptask.title
+        self.title = ":".join(item.strip(' "') for item in lptask.title.split(':')[1:])
         self.lptask = lptask
         self.number = int(self.web_link.split('/')[-1])
 
