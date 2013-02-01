@@ -123,7 +123,9 @@ class TaskList(object):
         for category, tasks in self.tasks_by_category():
             if not tasks:
                 continue
+            print ""
             print "##", category
+            print ""
             for task in tasks:
                 task.printout()
 
