@@ -1,0 +1,1 @@
+{'web_link': u'https://bugs.launchpad.net/nova/+bug/1030108', 'title': u'Detaching a volume from a XenAPI instance fails if XenAPI thinks it is in use'}

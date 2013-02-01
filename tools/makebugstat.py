@@ -1,5 +1,6 @@
 import launchpadlib
 import sys
+import os
 
 from launchpadlib.launchpad import Launchpad
 
@@ -103,6 +104,10 @@ class Task(object):
     def fixed(self):
         return self.category == FIXED
 
+    def save(self):
+        with open(os.path.join("tasks", str(self.number)), "wb") as f:
+            f.write(repr(dict(web_link=self.web_link, title=self.title)))
+
 
 class TaskList(object):
     def __init__(self, prj_name, taskgen):
@@ -140,7 +145,9 @@ class TaskList(object):
 def tasks(prj_name, keywords):
     prj = launchpad.projects[prj_name]
     for lptask in prj.searchTasks(search_text='xenapi'):
-        yield Task(lptask.web_link, lptask.title)
+        task = Task(lptask.web_link, lptask.title)
+        task.save()
+        yield task
 
 
 for prj_name in ['nova', 'cinder', 'quantum', 'glance']:

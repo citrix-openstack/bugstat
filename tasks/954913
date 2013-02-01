@@ -1,0 +1,1 @@
+{'web_link': u'https://bugs.launchpad.net/nova/+bug/954913', 'title': u'xenapi host refresh not dealing with exceptions well when updating host stats'}

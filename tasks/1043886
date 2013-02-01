@@ -1,0 +1,1 @@
+{'web_link': u'https://bugs.launchpad.net/nova/+bug/1043886', 'title': u'Firewall rules are not updated if you restart nova-compute'}

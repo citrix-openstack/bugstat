@@ -1,0 +1,1 @@
+{'web_link': u'https://bugs.launchpad.net/nova/+bug/1061062', 'title': u'Asynchronous errors can only be reported if instance is in ERROR'}
