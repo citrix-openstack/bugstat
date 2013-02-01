@@ -74,10 +74,9 @@ def to_dict(obj):
 
 
 class Task(object):
-    def __init__(self, lptask):
-        self.web_link = lptask.web_link
-        self.title = ":".join(item.strip(' "') for item in lptask.title.split(':')[1:])
-        self.lptask = lptask
+    def __init__(self, web_link, title):
+        self.web_link = web_link
+        self.title = ":".join(item.strip(' "') for item in title.split(':')[1:])
         self.number = int(self.web_link.split('/')[-1])
 
     @property
@@ -141,7 +140,7 @@ class TaskList(object):
 def tasks(prj_name, keywords):
     prj = launchpad.projects[prj_name]
     for task in prj.searchTasks(search_text='xenapi'):
-        yield Task(task)
+        yield Task(task.web_link, task.title)
 
 
 for prj_name in ['nova', 'cinder', 'quantum', 'glance']:
