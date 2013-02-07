@@ -163,5 +163,5 @@ def search_task_by_text(prj_name, keywords, task_db):
 task_db = dict()
 
 for prj_name in ['nova', 'cinder', 'quantum', 'glance']:
-    tasklist = TaskList(prj_name, search_task_by_text(prj_name, ['xen', 'xcp', 'xapi'], task_db))
+    tasklist = TaskList(prj_name, search_task_by_text(prj_name, ['xenapi', 'xen', 'xcp', 'xapi'], task_db))
     tasklist.printout()
