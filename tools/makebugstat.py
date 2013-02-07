@@ -143,7 +143,7 @@ class TaskList(object):
             yield category, tasks
 
 
-def tasks(prj_name, keywords):
+def search_task_by_text(prj_name, keywords):
     prj = launchpad.projects[prj_name]
     for lptask in prj.searchTasks(search_text='xenapi'):
         task = Task(lptask.web_link, lptask.title)
@@ -152,5 +152,5 @@ def tasks(prj_name, keywords):
 
 
 for prj_name in ['nova', 'cinder', 'quantum', 'glance']:
-    tasklist = TaskList(prj_name, tasks(prj_name, ['xen', 'xcp', 'xapi']))
+    tasklist = TaskList(prj_name, search_task_by_text(prj_name, ['xen', 'xcp', 'xapi']))
     tasklist.printout()
