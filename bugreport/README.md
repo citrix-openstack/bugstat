@@ -1,5 +1,5 @@
 # nova
-Fixed/Pending ratio: 3 / 21
+Fixed/Pending ratio: 3 / 22
 
 ## storage/disk
 
@@ -31,6 +31,10 @@ Fixed/Pending ratio: 3 / 21
  * [is it valid?][XenAPI pool based migration should error when not shared storage](https://bugs.launchpad.net/nova/+bug/1026552)
  * [is it valid?][Need to deal with XenAPI pool master election](https://bugs.launchpad.net/nova/+bug/1026153)
 
+## networking
+
+ * [Firewall rules are not updated if you restart nova-compute](https://bugs.launchpad.net/nova/+bug/1043886)
+
 ## console
 
  * [review][XenAPI text console support](https://bugs.launchpad.net/nova/+bug/1004175)
@@ -39,13 +43,13 @@ Fixed/Pending ratio: 3 / 21
 
  * [Service stats needs to be unified across virt layer](https://bugs.launchpad.net/nova/+bug/816406)
 
-## networking
-
- * [Firewall rules are not updated if you restart nova-compute](https://bugs.launchpad.net/nova/+bug/1043886)
-
 ## qabug
 
  * [Over time XenAPI driver eventuall fills up Dom0 disk](https://bugs.launchpad.net/nova/+bug/1037516)
+
+## new
+
+ * [check_can_live_migrate_source does not return data (xenapi)](https://bugs.launchpad.net/nova/+bug/1118491)
 
 ## instance spawn
 
