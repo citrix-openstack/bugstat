@@ -22,6 +22,7 @@ MIGRATION = 'migration'
 MISSINGIMPLEMENTATION = 'missing implementation'
 FIXED = 'fixed'
 NONXEN = 'non-xen'
+NEW = 'new'
 
 categories = {
     816406: DISCUSSION,
@@ -82,7 +83,7 @@ class Task(object):
 
     @property
     def category(self):
-        return categories[self.number]
+        return categories.get(self.number, NEW)
 
     @property
     def relevant(self):
@@ -134,7 +135,7 @@ class TaskList(object):
                 task.printout()
 
     def tasks_by_category(self):
-        result = dict((cat, []) for cat in set(categories.values()))
+        result = dict((cat, []) for cat in set(categories.values() + [NEW]))
         for task in self.tasks:
             result[task.category].append(task)
 
