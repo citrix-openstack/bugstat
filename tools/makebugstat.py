@@ -176,7 +176,16 @@ def main():
 
     for prj_name in ['nova', 'cinder', 'quantum', 'glance']:
         tasklists.append(
-            TaskList(prj_name, search_task_by_text_or_tag(prj_name, ['xenserver', 'xenapi', 'xen', 'xcp', 'xapi'], ['xenserver'], task_db)))
+            TaskList(
+                prj_name,
+                search_task_by_text_or_tag(
+                    prj_name,
+                    ['xenserver', 'xenapi', 'xen', 'xcp', 'xapi'],
+                    ['xenserver'],
+                    task_db
+                )
+            )
+        )
 
     print "# Summary"
     print ""
