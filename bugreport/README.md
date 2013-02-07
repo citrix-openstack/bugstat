@@ -1,4 +1,8 @@
-# nova  -  31
+# Summary
+
+Fixed/Pending Ratio: 3 / 35
+
+# glance  -  31
 
 Fixed/Pending ratio: 3 / 31
 
@@ -69,11 +73,11 @@ Fixed/Pending ratio: 3 / 31
 
  * [XenAPI should implement list_instance_uuids()](https://bugs.launchpad.net/nova/+bug/1097980)
 
-# cinder  -  0
+# glance  -  0
 
 No bugs found
 
-# quantum  -  2
+# glance  -  2
 
 Fixed/Pending ratio: 0 / 2
 

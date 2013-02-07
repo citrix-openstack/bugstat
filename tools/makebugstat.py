@@ -161,7 +161,16 @@ def search_task_by_text(prj_name, keywords, task_db):
 
 
 task_db = dict()
+tasklists = []
 
 for prj_name in ['nova', 'cinder', 'quantum', 'glance']:
-    tasklist = TaskList(prj_name, search_task_by_text(prj_name, ['xenapi', 'xen', 'xcp', 'xapi'], task_db))
+    tasklists.append(
+        TaskList(prj_name, search_task_by_text(prj_name, ['xenapi', 'xen', 'xcp', 'xapi'], task_db)))
+
+print "# Summary"
+print ""
+print "Fixed/Pending Ratio:", len([t for t in task_db.values() if t.fixed]), "/", len(task_db)
+print ""
+
+for tasklist in tasklists:
     tasklist.printout()
