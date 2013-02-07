@@ -1,0 +1,1 @@
+{'web_link': u'https://bugs.launchpad.net/nova/+bug/747394', 'title': u'XenServer port needs to clear out vm-data/networking before issuing resetnetwork command'}
