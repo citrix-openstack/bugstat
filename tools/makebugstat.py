@@ -122,7 +122,7 @@ class TaskList(object):
         print ""
 
     def printout(self):
-        print "#", self.prj_name, " - ", len(self.tasks)
+        print "#", self.prj_name, " - `%s`" % len(self.tasks)
         if not self.tasks:
             print ""
             print "No bugs found"

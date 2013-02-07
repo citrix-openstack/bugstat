@@ -2,7 +2,7 @@
 
 Fixed/Pending Ratio: 3 / 42
 
-# nova  -  37
+# nova  - `37`
 
 Fixed/Pending ratio: 3 / 37
 
@@ -79,11 +79,11 @@ Fixed/Pending ratio: 3 / 37
 
  * [XenAPI should implement list_instance_uuids()](https://bugs.launchpad.net/nova/+bug/1097980)
 
-# cinder  -  0
+# cinder  - `0`
 
 No bugs found
 
-# quantum  -  3
+# quantum  - `3`
 
 Fixed/Pending ratio: 0 / 3
 
@@ -93,7 +93,7 @@ Fixed/Pending ratio: 0 / 3
  * [ovs_quantum_plugin incompatibility with python 2.4](https://bugs.launchpad.net/quantum/+bug/994831)
  * [ovs_quantum_agent.py crashes on Citrix XCP because of old python version (2.4)](https://bugs.launchpad.net/quantum/+bug/994774)
 
-# glance  -  1
+# glance  - `1`
 
 Fixed/Pending ratio: 0 / 1
 
