@@ -1,0 +1,1 @@
+{'web_link': u'https://bugs.launchpad.net/nova/+bug/934279', 'title': u'Need more efficient implementation of get_num_instances() and instance_exists() in Xen and VMWare virt drivers'}

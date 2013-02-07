@@ -120,10 +120,13 @@ class TaskList(object):
         print "Fixed/Pending ratio:", len(fixed_tasks), '/', len(self.tasks)
 
     def printout(self):
+        print "#", prj_name
         if not self.tasks:
+            print ""
+            print "No bugs found"
+            print ""
             return
 
-        print "#", prj_name
         self.print_statistics()
         for category, tasks in self.tasks_by_category():
             if not tasks:
@@ -143,14 +146,20 @@ class TaskList(object):
             yield category, tasks
 
 
-def search_task_by_text(prj_name, keywords):
+def search_task_by_text(prj_name, keywords, task_db):
     prj = launchpad.projects[prj_name]
-    for lptask in prj.searchTasks(search_text='xenapi'):
-        task = Task(lptask.web_link, lptask.title)
-        task.save()
-        yield task
+    for keyword in keywords:
+        for lptask in prj.searchTasks(search_text=keyword):
+            task = Task(lptask.web_link, lptask.title)
 
+            if task.number not in task_db:
+                task_db[task.number] = task
+                task.save()
+                yield task
+
+
+task_db = dict()
 
 for prj_name in ['nova', 'cinder', 'quantum', 'glance']:
-    tasklist = TaskList(prj_name, search_task_by_text(prj_name, ['xen', 'xcp', 'xapi']))
+    tasklist = TaskList(prj_name, search_task_by_text(prj_name, ['xen', 'xcp', 'xapi'], task_db))
     tasklist.printout()
