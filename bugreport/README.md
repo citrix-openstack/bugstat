@@ -1,4 +1,5 @@
 # nova
+
 Fixed/Pending ratio: 1 / 11
 
 ## new
@@ -20,20 +21,25 @@ Fixed/Pending ratio: 1 / 11
 ## fixed
 
  * [[xen] create/update metadata during boot can put instance into ERROR](https://bugs.launchpad.net/nova/+bug/1100866)
+
 # cinder
 
 No bugs found
 
 # quantum
+
 Fixed/Pending ratio: 0 / 2
 
 ## new
 
  * [ovs_quantum_plugin incompatibility with python 2.4](https://bugs.launchpad.net/quantum/+bug/994831)
  * [ovs_quantum_agent.py crashes on Citrix XCP because of old python version (2.4)](https://bugs.launchpad.net/quantum/+bug/994774)
+
 # glance
+
 Fixed/Pending ratio: 0 / 1
 
 ## new
 
  * [windows image upload on xen host results in sr scan failure](https://bugs.launchpad.net/glance/+bug/1055399)
+

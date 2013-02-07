@@ -116,8 +116,10 @@ class TaskList(object):
         self.prj_name = prj_name
 
     def print_statistics(self):
+        print ""
         fixed_tasks = [task for task in self.tasks if task.fixed]
         print "Fixed/Pending ratio:", len(fixed_tasks), '/', len(self.tasks)
+        print ""
 
     def printout(self):
         print "#", prj_name
@@ -131,11 +133,11 @@ class TaskList(object):
         for category, tasks in self.tasks_by_category():
             if not tasks:
                 continue
-            print ""
             print "##", category
             print ""
             for task in tasks:
                 task.printout()
+            print ""
 
     def tasks_by_category(self):
         result = dict((cat, []) for cat in set(categories.values() + [NEW]))
