@@ -69,12 +69,10 @@ Fixed/Pending ratio: 3 / 31
 
  * [XenAPI should implement list_instance_uuids()](https://bugs.launchpad.net/nova/+bug/1097980)
 
-32
 # cinder
 
 No bugs found
 
-32
 # quantum
 
 Fixed/Pending ratio: 0 / 2
@@ -84,7 +82,6 @@ Fixed/Pending ratio: 0 / 2
  * [ovs_quantum_plugin incompatibility with python 2.4](https://bugs.launchpad.net/quantum/+bug/994831)
  * [ovs_quantum_agent.py crashes on Citrix XCP because of old python version (2.4)](https://bugs.launchpad.net/quantum/+bug/994774)
 
-34
 # glance
 
 Fixed/Pending ratio: 0 / 1
@@ -93,4 +90,3 @@ Fixed/Pending ratio: 0 / 1
 
  * [windows image upload on xen host results in sr scan failure](https://bugs.launchpad.net/glance/+bug/1055399)
 
-35
