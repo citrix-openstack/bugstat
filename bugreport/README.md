@@ -1,10 +1,10 @@
 # Summary
 
-Fixed/Pending Ratio: 3 / 41
+Fixed/Pending Ratio: 3 / 42
 
-# nova  -  36
+# nova  -  37
 
-Fixed/Pending ratio: 3 / 36
+Fixed/Pending ratio: 3 / 37
 
 ## new
 
@@ -13,6 +13,7 @@ Fixed/Pending ratio: 3 / 36
  * [libvirt should enable pae setting for Xen or KVM guest](https://bugs.launchpad.net/nova/+bug/1100697)
  * [nova command of host-descrbe should display vg disk size in xen hypervisor when libvirt_images_type is lvm](https://bugs.launchpad.net/nova/+bug/1098116)
  * [Xen migration driver should use execvp](https://bugs.launchpad.net/nova/+bug/1074087)
+ * [Failure to set root password leaves instance in ERROR](https://bugs.launchpad.net/nova/+bug/1061045)
  * [Raw disk key error 'root'](https://bugs.launchpad.net/nova/+bug/1052085)
  * [XenServer:If file system is directly is on root device, auto_disk_configure does not work](https://bugs.launchpad.net/nova/+bug/1024944)
  * [Need more efficient implementation of get_num_instances() and instance_exists() in Xen and VMWare virt drivers](https://bugs.launchpad.net/nova/+bug/934279)

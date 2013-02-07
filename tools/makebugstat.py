@@ -148,10 +148,20 @@ class TaskList(object):
             yield category, tasks
 
 
-def search_task_by_text(prj_name, keywords, task_db):
+def search_task_by_text_or_tag(prj_name, keywords, tags, task_db):
     prj = launchpad.projects[prj_name]
+
     for keyword in keywords:
         for lptask in prj.searchTasks(search_text=keyword):
+            task = Task(lptask.web_link, lptask.title)
+
+            if task.number not in task_db:
+                task_db[task.number] = task
+                task.save()
+                yield task
+
+    for tag in tags:
+        for lptask in prj.searchTasks(tags=tag):
             task = Task(lptask.web_link, lptask.title)
 
             if task.number not in task_db:
@@ -166,7 +176,7 @@ def main():
 
     for prj_name in ['nova', 'cinder', 'quantum', 'glance']:
         tasklists.append(
-            TaskList(prj_name, search_task_by_text(prj_name, ['xenserver', 'xenapi', 'xen', 'xcp', 'xapi'], task_db)))
+            TaskList(prj_name, search_task_by_text_or_tag(prj_name, ['xenserver', 'xenapi', 'xen', 'xcp', 'xapi'], ['xenserver'], task_db)))
 
     print "# Summary"
     print ""
