@@ -1,1 +1,1 @@
-{'web_link': u'https://bugs.launchpad.net/nova/+bug/1101229', 'title': u'xenapi:error on volume detach StorageError:Unable to find SR from VBD'}
+{'status': u'Fix Committed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1101229', 'title': u'xenapi:error on volume detach StorageError:Unable to find SR from VBD'}

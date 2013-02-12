@@ -1,1 +1,1 @@
-{'web_link': u'https://bugs.launchpad.net/nova/+bug/1100866', 'title': u'[xen] create/update metadata during boot can put instance into ERROR'}
+{'status': u'Fix Committed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1100866', 'title': u'[xen] create/update metadata during boot can put instance into ERROR'}

@@ -1,1 +1,1 @@
-{'web_link': u'https://bugs.launchpad.net/nova/+bug/1098116', 'title': u'nova command of host-descrbe should display vg disk size in xen hypervisor when libvirt_images_type is lvm'}
+{'status': u'Fix Committed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1098116', 'title': u'nova command of host-descrbe should display vg disk size in xen hypervisor when libvirt_images_type is lvm'}

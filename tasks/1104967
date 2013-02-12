@@ -1,1 +1,1 @@
-{'web_link': u'https://bugs.launchpad.net/nova/+bug/1104967', 'title': u'Image Caching not implemented in nova for ESXi hypervisor'}
+{'status': u'In Progress', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1104967', 'title': u'Image Caching not implemented in nova for ESXi hypervisor'}

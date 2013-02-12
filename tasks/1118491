@@ -1,1 +1,1 @@
-{'web_link': u'https://bugs.launchpad.net/nova/+bug/1118491', 'title': u'check_can_live_migrate_source does not return data (xenapi)'}
+{'status': u'In Progress', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1118491', 'title': u'check_can_live_migrate_source does not return data (xenapi)'}

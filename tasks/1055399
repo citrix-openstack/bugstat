@@ -1,1 +1,1 @@
-{'web_link': u'https://bugs.launchpad.net/glance/+bug/1055399', 'title': u'windows image upload on xen host results in sr scan failure'}
+{'status': u'Incomplete', 'web_link': u'https://bugs.launchpad.net/glance/+bug/1055399', 'title': u'windows image upload on xen host results in sr scan failure'}

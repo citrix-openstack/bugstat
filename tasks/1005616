@@ -1,1 +1,1 @@
-{'web_link': u'https://bugs.launchpad.net/quantum/+bug/1005616', 'title': u'Windows instances may not get correct port configuration as set by quantum'}
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/quantum/+bug/1005616', 'title': u'Windows instances may not get correct port configuration as set by quantum'}

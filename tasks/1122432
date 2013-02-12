@@ -1,1 +1,1 @@
-{'web_link': u'https://bugs.launchpad.net/nova/+bug/1122432', 'title': u'get_instance_bdms tries to access db from compute'}
+{'status': u'New', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1122432', 'title': u'get_instance_bdms tries to access db from compute'}

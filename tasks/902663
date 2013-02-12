@@ -1,1 +1,1 @@
-{'web_link': u'https://bugs.launchpad.net/nova/+bug/902663', 'title': u'dom0 management traffic is not allowed to flow across a VLAN'}
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/902663', 'title': u'dom0 management traffic is not allowed to flow across a VLAN'}

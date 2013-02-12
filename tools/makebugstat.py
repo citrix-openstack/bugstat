@@ -76,8 +76,9 @@ def to_dict(obj):
 
 
 class Task(object):
-    def __init__(self, web_link, title):
+    def __init__(self, web_link, title, status):
         self.web_link = web_link
+        self.status = status
         self.title = ":".join(item.strip(' "') for item in title.split(':')[1:])
         self.number = int(self.web_link.split('/')[-1])
 
@@ -107,7 +108,7 @@ class Task(object):
 
     def save(self):
         with open(os.path.join("tasks", str(self.number)), "wb") as f:
-            f.write(repr(dict(web_link=self.web_link, title=self.title)))
+            f.write(repr(dict(web_link=self.web_link, title=self.title, status=self.status)))
 
 
 class TaskList(object):
@@ -153,7 +154,7 @@ def search_task_by_text_or_tag(prj_name, keywords, tags, task_db):
 
     for keyword in keywords:
         for lptask in prj.searchTasks(search_text=keyword):
-            task = Task(lptask.web_link, lptask.title)
+            task = Task(lptask.web_link, lptask.title, lptask.status)
 
             if task.number not in task_db:
                 task_db[task.number] = task
@@ -162,7 +163,7 @@ def search_task_by_text_or_tag(prj_name, keywords, tags, task_db):
 
     for tag in tags:
         for lptask in prj.searchTasks(tags=tag):
-            task = Task(lptask.web_link, lptask.title)
+            task = Task(lptask.web_link, lptask.title, lptask.status)
 
             if task.number not in task_db:
                 task_db[task.number] = task

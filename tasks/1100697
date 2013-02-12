@@ -1,1 +1,1 @@
-{'web_link': u'https://bugs.launchpad.net/nova/+bug/1100697', 'title': u'libvirt should enable pae setting for Xen or KVM guest'}
+{'status': u'In Progress', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1100697', 'title': u'libvirt should enable pae setting for Xen or KVM guest'}

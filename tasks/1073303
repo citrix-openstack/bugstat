@@ -1,1 +1,1 @@
-{'web_link': u'https://bugs.launchpad.net/nova/+bug/1073303', 'title': u'xenapi finish_migration does not cleanup on failures'}
+{'status': u'Triaged', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1073303', 'title': u'xenapi finish_migration does not cleanup on failures'}

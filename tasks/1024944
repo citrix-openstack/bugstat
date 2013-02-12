@@ -1,1 +1,1 @@
-{'web_link': u'https://bugs.launchpad.net/nova/+bug/1024944', 'title': u'XenServer:If file system is directly is on root device, auto_disk_configure does not work'}
+{'status': u'In Progress', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1024944', 'title': u'XenServer:If file system is directly is on root device, auto_disk_configure does not work'}

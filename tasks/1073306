@@ -1,1 +1,1 @@
-{'web_link': u'https://bugs.launchpad.net/nova/+bug/1073306', 'title': u"xenapi migrations don't apply security group filters"}
+{'status': u'Triaged', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1073306', 'title': u"xenapi migrations don't apply security group filters"}
