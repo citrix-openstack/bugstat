@@ -1,13 +1,16 @@
 # Summary
 
-Fixed/Pending Ratio: 3 / 42
+Fixed/Pending Ratio: 3 / 46
 
-# nova  - `37`
+# nova  - `40`
 
-Fixed/Pending ratio: 3 / 37
+Fixed/Pending ratio: 3 / 40
 
 ## new
 
+ * [XenAPI Volume Errors not showing up in Instance Faults](https://bugs.launchpad.net/nova/+bug/1122733)
+ * [get_instance_bdms tries to access db from compute](https://bugs.launchpad.net/nova/+bug/1122432)
+ * [make vmwareapi driver pass quantum port-id to ESX](https://bugs.launchpad.net/nova/+bug/1121349)
  * [check_can_live_migrate_source does not return data (xenapi)](https://bugs.launchpad.net/nova/+bug/1118491)
  * [XenServer not cleaning up SM locks](https://bugs.launchpad.net/nova/+bug/1103158)
  * [libvirt should enable pae setting for Xen or KVM guest](https://bugs.launchpad.net/nova/+bug/1100697)
@@ -79,9 +82,13 @@ Fixed/Pending ratio: 3 / 37
 
  * [XenAPI should implement list_instance_uuids()](https://bugs.launchpad.net/nova/+bug/1097980)
 
-# cinder  - `0`
+# cinder  - `1`
 
-No bugs found
+Fixed/Pending ratio: 0 / 1
+
+## new
+
+ * [xenapi:XenAPINFS does not handle plugin's RetryableError](https://bugs.launchpad.net/cinder/+bug/1123146)
 
 # quantum  - `3`
 
