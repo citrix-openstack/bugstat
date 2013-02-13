@@ -1,1 +1,1 @@
-{'status': u'New', 'web_link': u'https://bugs.launchpad.net/cinder/+bug/1123146', 'title': u"xenapi:XenAPINFS does not handle plugin's RetryableError"}
+{'status': u'Incomplete', 'web_link': u'https://bugs.launchpad.net/cinder/+bug/1123146', 'title': u"xenapi:XenAPINFS does not handle plugin's RetryableError"}

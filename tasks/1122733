@@ -1,1 +1,1 @@
-{'status': u'In Progress', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1122733', 'title': u'XenAPI Volume Errors not showing up in Instance Faults'}
+{'status': u'Fix Committed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1122733', 'title': u'XenAPI Volume Errors not showing up in Instance Faults'}

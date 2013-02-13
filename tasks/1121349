@@ -1,1 +1,1 @@
-{'status': u'In Progress', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1121349', 'title': u'make vmwareapi driver pass quantum port-id to ESX'}
+{'status': u'Fix Committed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1121349', 'title': u'make vmwareapi driver pass quantum port-id to ESX'}
