@@ -102,7 +102,7 @@ class Task(object):
         return ""
 
     def printout(self):
-        print " * `'%s'` %s[%s](%s)" % (self.number, self.actions, self.title, self.web_link)
+        print " * '%s' %s[%s](%s)" % (self.number, self.actions, self.title, self.web_link)
 
     @property
     def fixed(self):
