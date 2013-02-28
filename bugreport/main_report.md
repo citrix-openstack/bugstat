@@ -1,6 +1,6 @@
 # Summary
 
-Fixed/Pending Ratio: 0 / 41
+Fixed/Pending Ratio: 1 / 40
 
 # nova  - `34`
 
@@ -73,14 +73,13 @@ Fixed/Pending ratio: 0 / 34
 
  * [XenAPI should implement list_instance_uuids()](https://bugs.launchpad.net/nova/+bug/1097980)
 
-# cinder  - `2`
+# cinder  - `1`
 
-Fixed/Pending ratio: 0 / 2
+Fixed/Pending ratio: 1 / 1
 
 ## new
 
  * [XenAPINFS:Volume always uploaded as vhd/ovf](https://bugs.launchpad.net/cinder/+bug/1131291)
- * [xenapi:XenAPINFS does not handle plugin's RetryableError](https://bugs.launchpad.net/cinder/+bug/1123146)
 
 # quantum  - `3`
 
