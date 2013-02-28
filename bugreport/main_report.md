@@ -1,20 +1,13 @@
 # Summary
 
-Fixed/Pending Ratio: 1 / 40
+Fixed/Pending Ratio: 2 / 40
 
 # nova  - `34`
 
-Fixed/Pending ratio: 0 / 34
+Fixed/Pending ratio: 1 / 34
 
 ## new
 
- * `1135465` [block live migration is broken:InstanceNotFound](https://bugs.launchpad.net/nova/+bug/1135465)
- * `1134493` [Add retry on upload_vhd in xapi glance plugin](https://bugs.launchpad.net/nova/+bug/1134493)
- * `1131588` [virt drivers' resume_state_on_host_boot don't handle migrating instances](https://bugs.launchpad.net/nova/+bug/1131588)
- * `1103158` [XenServer not cleaning up SM locks](https://bugs.launchpad.net/nova/+bug/1103158)
- * `1100697` [libvirt should enable pae setting for Xen or KVM guest](https://bugs.launchpad.net/nova/+bug/1100697)
- * `1074087` [Xen migration driver should use execvp](https://bugs.launchpad.net/nova/+bug/1074087)
- * `1052085` [Raw disk key error 'root'](https://bugs.launchpad.net/nova/+bug/1052085)
  * `1024944` [XenServer:If file system is directly is on root device, auto_disk_configure does not work](https://bugs.launchpad.net/nova/+bug/1024944)
  * `934279` [Need more efficient implementation of get_num_instances() and instance_exists() in Xen and VMWare virt drivers](https://bugs.launchpad.net/nova/+bug/934279)
  * `914484` [Boot from ISO is different in XS/KVM](https://bugs.launchpad.net/nova/+bug/914484)
@@ -27,6 +20,8 @@ Fixed/Pending ratio: 0 / 34
 
 ## storage/disk
 
+ * `1134493` [Add retry on upload_vhd in xapi glance plugin](https://bugs.launchpad.net/nova/+bug/1134493)
+ * `1103158` [XenServer not cleaning up SM locks](https://bugs.launchpad.net/nova/+bug/1103158)
  * `1030108` [maybe a xenserver bug][Detaching a volume from a XenAPI instance fails if XenAPI thinks it is in use](https://bugs.launchpad.net/nova/+bug/1030108)
  * `1015423` [ping it][xenapi ImageTooLarge exception leaves VDI around](https://bugs.launchpad.net/nova/+bug/1015423)
  * `962144` [xenapi resize fails on image with external ramdisk and kernel](https://bugs.launchpad.net/nova/+bug/962144)
@@ -35,6 +30,8 @@ Fixed/Pending ratio: 0 / 34
 
 ## migration
 
+ * `1135465` [block live migration is broken:InstanceNotFound](https://bugs.launchpad.net/nova/+bug/1135465)
+ * `1131588` [virt drivers' resume_state_on_host_boot don't handle migrating instances](https://bugs.launchpad.net/nova/+bug/1131588)
  * `1073306` [xenapi migrations don't apply security group filters](https://bugs.launchpad.net/nova/+bug/1073306)
  * `1073303` [xenapi finish_migration does not cleanup on failures](https://bugs.launchpad.net/nova/+bug/1073303)
  * `962097` [in xenapi migration plugin the vhd-util calls fail on kronos](https://bugs.launchpad.net/nova/+bug/962097)
@@ -43,6 +40,11 @@ Fixed/Pending ratio: 0 / 34
 
  * `1015190` [is it valid?][arch_filter tracebacks with xenapi](https://bugs.launchpad.net/nova/+bug/1015190)
  * `954913` [xenapi host refresh not dealing with exceptions well when updating host stats](https://bugs.launchpad.net/nova/+bug/954913)
+
+## missing implementation
+
+ * `1100697` [libvirt should enable pae setting for Xen or KVM guest](https://bugs.launchpad.net/nova/+bug/1100697)
+ * `1097980` [XenAPI should implement list_instance_uuids()](https://bugs.launchpad.net/nova/+bug/1097980)
 
 ## pools
 
@@ -61,6 +63,10 @@ Fixed/Pending ratio: 0 / 34
 
  * `816406` [Service stats needs to be unified across virt layer](https://bugs.launchpad.net/nova/+bug/816406)
 
+## fixed
+
+ * `1052085` [Raw disk key error 'root'](https://bugs.launchpad.net/nova/+bug/1052085)
+
 ## qabug
 
  * `1037516` [Over time XenAPI driver eventuall fills up Dom0 disk](https://bugs.launchpad.net/nova/+bug/1037516)
@@ -69,9 +75,9 @@ Fixed/Pending ratio: 0 / 34
 
  * `1061062` [Asynchronous errors can only be reported if instance is in ERROR](https://bugs.launchpad.net/nova/+bug/1061062)
 
-## missing implementation
+## minor
 
- * `1097980` [XenAPI should implement list_instance_uuids()](https://bugs.launchpad.net/nova/+bug/1097980)
+ * `1074087` [Xen migration driver should use execvp](https://bugs.launchpad.net/nova/+bug/1074087)
 
 # cinder  - `1`
 
