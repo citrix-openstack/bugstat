@@ -24,6 +24,7 @@ FIXED = 'fixed'
 NONXEN = 'non-xen'
 NEW = 'new'
 MINOR = 'minor'
+STALE = 'stale'
 
 categories = {
     816406: DISCUSSION,
@@ -57,6 +58,13 @@ categories = {
     1052085: FIXED,
     1024944: MINOR,
     934279: MINOR,
+    914484: STORAGE,
+    912684: STORAGE,
+    903445: STORAGE,
+    903282: STALE,
+    902663: STALE,
+    813793: MINOR,
+    747394: STALE,
 }
 
 REVIEW = 'review'
