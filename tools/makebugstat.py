@@ -55,6 +55,8 @@ categories = {
     1100697: MISSINGIMPLEMENTATION,
     1074087: MINOR,
     1052085: FIXED,
+    1024944: MINOR,
+    934279: MINOR,
 }
 
 REVIEW = 'review'

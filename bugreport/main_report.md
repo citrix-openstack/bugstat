@@ -6,18 +6,6 @@ Fixed/Pending Ratio: 2 / 40
 
 Fixed/Pending ratio: 1 / 34
 
-## new
-
- * `1024944` [XenServer:If file system is directly is on root device, auto_disk_configure does not work](https://bugs.launchpad.net/nova/+bug/1024944)
- * `934279` [Need more efficient implementation of get_num_instances() and instance_exists() in Xen and VMWare virt drivers](https://bugs.launchpad.net/nova/+bug/934279)
- * `914484` [Boot from ISO is different in XS/KVM](https://bugs.launchpad.net/nova/+bug/914484)
- * `912684` [Xen instances:support for randomly-named and uncompressed images](https://bugs.launchpad.net/nova/+bug/912684)
- * `903445` [New xapi backend for Local Storage ISO SR](https://bugs.launchpad.net/nova/+bug/903445)
- * `903282` [Instances spawned on XenServer cannot communicate](https://bugs.launchpad.net/nova/+bug/903282)
- * `902663` [dom0 management traffic is not allowed to flow across a VLAN](https://bugs.launchpad.net/nova/+bug/902663)
- * `813793` [Resize up from an instance with no local storage not handled properly in XenServer](https://bugs.launchpad.net/nova/+bug/813793)
- * `747394` [XenServer port needs to clear out vm-data/networking before issuing resetnetwork command](https://bugs.launchpad.net/nova/+bug/747394)
-
 ## storage/disk
 
  * `1134493` [Add retry on upload_vhd in xapi glance plugin](https://bugs.launchpad.net/nova/+bug/1134493)
@@ -28,6 +16,16 @@ Fixed/Pending ratio: 1 / 34
  * `952816` [xenapi resize fails on Essex4 while using COW](https://bugs.launchpad.net/nova/+bug/952816)
  * `929062` [/images filling up on xenserver host](https://bugs.launchpad.net/nova/+bug/929062)
 
+## new
+
+ * `914484` [Boot from ISO is different in XS/KVM](https://bugs.launchpad.net/nova/+bug/914484)
+ * `912684` [Xen instances:support for randomly-named and uncompressed images](https://bugs.launchpad.net/nova/+bug/912684)
+ * `903445` [New xapi backend for Local Storage ISO SR](https://bugs.launchpad.net/nova/+bug/903445)
+ * `903282` [Instances spawned on XenServer cannot communicate](https://bugs.launchpad.net/nova/+bug/903282)
+ * `902663` [dom0 management traffic is not allowed to flow across a VLAN](https://bugs.launchpad.net/nova/+bug/902663)
+ * `813793` [Resize up from an instance with no local storage not handled properly in XenServer](https://bugs.launchpad.net/nova/+bug/813793)
+ * `747394` [XenServer port needs to clear out vm-data/networking before issuing resetnetwork command](https://bugs.launchpad.net/nova/+bug/747394)
+
 ## migration
 
  * `1135465` [block live migration is broken:InstanceNotFound](https://bugs.launchpad.net/nova/+bug/1135465)
@@ -35,6 +33,12 @@ Fixed/Pending ratio: 1 / 34
  * `1073306` [xenapi migrations don't apply security group filters](https://bugs.launchpad.net/nova/+bug/1073306)
  * `1073303` [xenapi finish_migration does not cleanup on failures](https://bugs.launchpad.net/nova/+bug/1073303)
  * `962097` [in xenapi migration plugin the vhd-util calls fail on kronos](https://bugs.launchpad.net/nova/+bug/962097)
+
+## minor
+
+ * `1074087` [Xen migration driver should use execvp](https://bugs.launchpad.net/nova/+bug/1074087)
+ * `1024944` [XenServer:If file system is directly is on root device, auto_disk_configure does not work](https://bugs.launchpad.net/nova/+bug/1024944)
+ * `934279` [Need more efficient implementation of get_num_instances() and instance_exists() in Xen and VMWare virt drivers](https://bugs.launchpad.net/nova/+bug/934279)
 
 ## metrics
 
@@ -74,10 +78,6 @@ Fixed/Pending ratio: 1 / 34
 ## instance spawn
 
  * `1061062` [Asynchronous errors can only be reported if instance is in ERROR](https://bugs.launchpad.net/nova/+bug/1061062)
-
-## minor
-
- * `1074087` [Xen migration driver should use execvp](https://bugs.launchpad.net/nova/+bug/1074087)
 
 # cinder  - `1`
 
