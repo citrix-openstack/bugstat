@@ -1,22 +1,19 @@
 # Summary
 
-Fixed/Pending Ratio: 3 / 46
+Fixed/Pending Ratio: 0 / 41
 
-# nova  - `40`
+# nova  - `34`
 
-Fixed/Pending ratio: 3 / 40
+Fixed/Pending ratio: 0 / 34
 
 ## new
 
- * [XenAPI Volume Errors not showing up in Instance Faults](https://bugs.launchpad.net/nova/+bug/1122733)
- * [get_instance_bdms tries to access db from compute](https://bugs.launchpad.net/nova/+bug/1122432)
- * [make vmwareapi driver pass quantum port-id to ESX](https://bugs.launchpad.net/nova/+bug/1121349)
- * [check_can_live_migrate_source does not return data (xenapi)](https://bugs.launchpad.net/nova/+bug/1118491)
+ * [block live migration is broken:InstanceNotFound](https://bugs.launchpad.net/nova/+bug/1135465)
+ * [Add retry on upload_vhd in xapi glance plugin](https://bugs.launchpad.net/nova/+bug/1134493)
+ * [virt drivers' resume_state_on_host_boot don't handle migrating instances](https://bugs.launchpad.net/nova/+bug/1131588)
  * [XenServer not cleaning up SM locks](https://bugs.launchpad.net/nova/+bug/1103158)
  * [libvirt should enable pae setting for Xen or KVM guest](https://bugs.launchpad.net/nova/+bug/1100697)
- * [nova command of host-descrbe should display vg disk size in xen hypervisor when libvirt_images_type is lvm](https://bugs.launchpad.net/nova/+bug/1098116)
  * [Xen migration driver should use execvp](https://bugs.launchpad.net/nova/+bug/1074087)
- * [Failure to set root password leaves instance in ERROR](https://bugs.launchpad.net/nova/+bug/1061045)
  * [Raw disk key error 'root'](https://bugs.launchpad.net/nova/+bug/1052085)
  * [XenServer:If file system is directly is on root device, auto_disk_configure does not work](https://bugs.launchpad.net/nova/+bug/1024944)
  * [Need more efficient implementation of get_num_instances() and instance_exists() in Xen and VMWare virt drivers](https://bugs.launchpad.net/nova/+bug/934279)
@@ -41,12 +38,6 @@ Fixed/Pending ratio: 3 / 40
  * [xenapi migrations don't apply security group filters](https://bugs.launchpad.net/nova/+bug/1073306)
  * [xenapi finish_migration does not cleanup on failures](https://bugs.launchpad.net/nova/+bug/1073303)
  * [in xenapi migration plugin the vhd-util calls fail on kronos](https://bugs.launchpad.net/nova/+bug/962097)
-
-## fixed
-
- * [xenapi:error on volume detach StorageError:Unable to find SR from VBD](https://bugs.launchpad.net/nova/+bug/1101229)
- * [[xen] create/update metadata during boot can put instance into ERROR](https://bugs.launchpad.net/nova/+bug/1100866)
- * [xenapi get_all_bw_counters accesses instance as object](https://bugs.launchpad.net/nova/+bug/1098382)
 
 ## metrics
 
@@ -82,12 +73,13 @@ Fixed/Pending ratio: 3 / 40
 
  * [XenAPI should implement list_instance_uuids()](https://bugs.launchpad.net/nova/+bug/1097980)
 
-# cinder  - `1`
+# cinder  - `2`
 
-Fixed/Pending ratio: 0 / 1
+Fixed/Pending ratio: 0 / 2
 
 ## new
 
+ * [XenAPINFS:Volume always uploaded as vhd/ovf](https://bugs.launchpad.net/cinder/+bug/1131291)
  * [xenapi:XenAPINFS does not handle plugin's RetryableError](https://bugs.launchpad.net/cinder/+bug/1123146)
 
 # quantum  - `3`
