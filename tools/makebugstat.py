@@ -23,6 +23,7 @@ MISSINGIMPLEMENTATION = 'missing implementation'
 FIXED = 'fixed'
 NONXEN = 'non-xen'
 NEW = 'new'
+MINOR = 'minor'
 
 categories = {
     816406: DISCUSSION,
@@ -47,6 +48,13 @@ categories = {
     1100866: FIXED,
     1101229: FIXED,
     1104967: NONXEN,
+    1135465: MIGRATION,
+    1134493: STORAGE,
+    1131588: MIGRATION,
+    1103158: STORAGE,
+    1100697: MISSINGIMPLEMENTATION,
+    1074087: MINOR,
+    1052085: FIXED,
 }
 
 REVIEW = 'review'
