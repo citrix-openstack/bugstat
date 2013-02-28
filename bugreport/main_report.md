@@ -77,7 +77,7 @@ Fixed/Pending ratio: 0 / 34
 
 Fixed/Pending ratio: 1 / 1
 
-## new
+## fixed
 
  * [XenAPINFS:Volume always uploaded as vhd/ovf](https://bugs.launchpad.net/cinder/+bug/1131291)
 

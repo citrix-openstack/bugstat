@@ -84,6 +84,8 @@ class Task(object):
 
     @property
     def category(self):
+        if self.status in ['Fix Released', 'Fix Committed']:
+            return FIXED
         return categories.get(self.number, NEW)
 
     @property
@@ -104,10 +106,7 @@ class Task(object):
 
     @property
     def fixed(self):
-        return (
-            self.category == FIXED
-            or self.status in ['Fix Released', 'Fix Committed']
-        )
+        return self.category == FIXED
 
     def save(self):
         with open(os.path.join("tasks", str(self.number)), "wb") as f:
