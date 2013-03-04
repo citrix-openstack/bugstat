@@ -1,6 +1,6 @@
 # Summary
 
-Fixed/Pending Ratio: 4 / 58
+Fixed/Pending Ratio: 4 / 59
 
 # nova  - `33`
 
@@ -104,12 +104,13 @@ Fixed/Pending ratio: 0 / 1
 
  * `1055399` [windows image upload on xen host results in sr scan failure](https://bugs.launchpad.net/glance/+bug/1055399)
 
-# openstack-manuals  - `19`
+# openstack-manuals  - `20`
 
-Fixed/Pending ratio: 1 / 19
+Fixed/Pending ratio: 1 / 20
 
 ## new
 
+ * `1144507` [Document XenAPINFS Cinder driver](https://bugs.launchpad.net/openstack-manuals/+bug/1144507)
  * `1128554` [grizzly:allow NIC (vif) model to be chosen on per-image basis](https://bugs.launchpad.net/openstack-manuals/+bug/1128554)
  * `1106421` [grizzly:allow vm disk driver to be chosen per image](https://bugs.launchpad.net/openstack-manuals/+bug/1106421)
  * `1106405` [grizzly:xenapi:Add support for different image upload drivers](https://bugs.launchpad.net/openstack-manuals/+bug/1106405)
