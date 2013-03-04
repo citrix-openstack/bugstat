@@ -195,7 +195,7 @@ def main():
     task_db = dict()
     tasklists = []
 
-    for prj_name in ['nova', 'cinder', 'quantum', 'glance']:
+    for prj_name in ['nova', 'cinder', 'quantum', 'glance', 'openstack-manuals']:
         tasklists.append(
             TaskList(
                 prj_name,

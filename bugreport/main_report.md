@@ -1,6 +1,6 @@
 # Summary
 
-Fixed/Pending Ratio: 3 / 39
+Fixed/Pending Ratio: 4 / 58
 
 # nova  - `33`
 
@@ -103,4 +103,33 @@ Fixed/Pending ratio: 0 / 1
 ## new
 
  * `1055399` [windows image upload on xen host results in sr scan failure](https://bugs.launchpad.net/glance/+bug/1055399)
+
+# openstack-manuals  - `19`
+
+Fixed/Pending ratio: 1 / 19
+
+## new
+
+ * `1128554` [grizzly:allow NIC (vif) model to be chosen on per-image basis](https://bugs.launchpad.net/openstack-manuals/+bug/1128554)
+ * `1106421` [grizzly:allow vm disk driver to be chosen per image](https://bugs.launchpad.net/openstack-manuals/+bug/1106421)
+ * `1106405` [grizzly:xenapi:Add support for different image upload drivers](https://bugs.launchpad.net/openstack-manuals/+bug/1106405)
+ * `1095506` [grizzly:add configdrive support for xenapi](https://bugs.launchpad.net/openstack-manuals/+bug/1095506)
+ * `1095095` [Configuring for resize with KVM](https://bugs.launchpad.net/openstack-manuals/+bug/1095095)
+ * `1026745` [Quantum docs should describe XenAPI setup](https://bugs.launchpad.net/openstack-manuals/+bug/1026745)
+ * `1026742` [Add hints on troubleshooting XenAPI deployments](https://bugs.launchpad.net/openstack-manuals/+bug/1026742)
+ * `1026693` [Need to document Nova-volume on XenAPI](https://bugs.launchpad.net/openstack-manuals/+bug/1026693)
+ * `1026691` [Networking docs split for XenAPI and Libvirt too heavyweight](https://bugs.launchpad.net/openstack-manuals/+bug/1026691)
+ * `1026689` [Need to better describe Network HA and XenAPI](https://bugs.launchpad.net/openstack-manuals/+bug/1026689)
+ * `1026688` [XenAPI multi-nic](https://bugs.launchpad.net/openstack-manuals/+bug/1026688)
+ * `1026683` [Document XenAPI boot-from-volume support](https://bugs.launchpad.net/openstack-manuals/+bug/1026683)
+ * `1026682` [Document image creation and upload for XenAPI](https://bugs.launchpad.net/openstack-manuals/+bug/1026682)
+ * `1026674` [Hypervisor flag descriptions are often KVM specific, need to include XenAPI](https://bugs.launchpad.net/openstack-manuals/+bug/1026674)
+ * `1026671` [Expand "Post-Install Configuration" to include XenAPI](https://bugs.launchpad.net/openstack-manuals/+bug/1026671)
+ * `1023417` [Need better example configuration for XenServer](https://bugs.launchpad.net/openstack-manuals/+bug/1023417)
+ * `1022554` [Need docs for Xen in VLAN mode, not multi-host](https://bugs.launchpad.net/openstack-manuals/+bug/1022554)
+ * `1021224` [XenServer install docs should not rely on DevStack](https://bugs.launchpad.net/openstack-manuals/+bug/1021224)
+
+## fixed
+
+ * `1095410` [Maven Plugin 1.6.2+:PDF Chapter TOCs number incorrectly](https://bugs.launchpad.net/openstack-manuals/+bug/1095410)
 

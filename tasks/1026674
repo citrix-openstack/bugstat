@@ -1,0 +1,1 @@
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/openstack-manuals/+bug/1026674', 'title': u'Hypervisor flag descriptions are often KVM specific, need to include XenAPI'}
