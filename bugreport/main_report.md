@@ -1,10 +1,10 @@
 # Summary
 
-Fixed/Pending Ratio: 2 / 40
+Fixed/Pending Ratio: 3 / 39
 
-# nova  - `34`
+# nova  - `33`
 
-Fixed/Pending ratio: 1 / 34
+Fixed/Pending ratio: 2 / 33
 
 ## storage/disk
 
@@ -19,20 +19,18 @@ Fixed/Pending ratio: 1 / 34
  * `912684` [Xen instances:support for randomly-named and uncompressed images](https://bugs.launchpad.net/nova/+bug/912684)
  * `903445` [New xapi backend for Local Storage ISO SR](https://bugs.launchpad.net/nova/+bug/903445)
 
-## migration
-
- * `1135465` [block live migration is broken:InstanceNotFound](https://bugs.launchpad.net/nova/+bug/1135465)
- * `1131588` [virt drivers' resume_state_on_host_boot don't handle migrating instances](https://bugs.launchpad.net/nova/+bug/1131588)
- * `1073306` [xenapi migrations don't apply security group filters](https://bugs.launchpad.net/nova/+bug/1073306)
- * `1073303` [xenapi finish_migration does not cleanup on failures](https://bugs.launchpad.net/nova/+bug/1073303)
- * `962097` [in xenapi migration plugin the vhd-util calls fail on kronos](https://bugs.launchpad.net/nova/+bug/962097)
-
 ## minor
 
  * `1074087` [Xen migration driver should use execvp](https://bugs.launchpad.net/nova/+bug/1074087)
  * `1024944` [XenServer:If file system is directly is on root device, auto_disk_configure does not work](https://bugs.launchpad.net/nova/+bug/1024944)
  * `934279` [Need more efficient implementation of get_num_instances() and instance_exists() in Xen and VMWare virt drivers](https://bugs.launchpad.net/nova/+bug/934279)
  * `813793` [Resize up from an instance with no local storage not handled properly in XenServer](https://bugs.launchpad.net/nova/+bug/813793)
+
+## migration
+
+ * `1073306` [xenapi migrations don't apply security group filters](https://bugs.launchpad.net/nova/+bug/1073306)
+ * `1073303` [xenapi finish_migration does not cleanup on failures](https://bugs.launchpad.net/nova/+bug/1073303)
+ * `962097` [in xenapi migration plugin the vhd-util calls fail on kronos](https://bugs.launchpad.net/nova/+bug/962097)
 
 ## stale
 
@@ -49,6 +47,11 @@ Fixed/Pending ratio: 1 / 34
 
  * `1026552` [is it valid?][XenAPI pool based migration should error when not shared storage](https://bugs.launchpad.net/nova/+bug/1026552)
  * `1026153` [is it valid?][Need to deal with XenAPI pool master election](https://bugs.launchpad.net/nova/+bug/1026153)
+
+## fixed
+
+ * `1131588` [virt drivers' resume_state_on_host_boot don't handle migrating instances](https://bugs.launchpad.net/nova/+bug/1131588)
+ * `1052085` [Raw disk key error 'root'](https://bugs.launchpad.net/nova/+bug/1052085)
 
 ## missing implementation
 
@@ -70,10 +73,6 @@ Fixed/Pending ratio: 1 / 34
 ## networking
 
  * `1043886` [Firewall rules are not updated if you restart nova-compute](https://bugs.launchpad.net/nova/+bug/1043886)
-
-## fixed
-
- * `1052085` [Raw disk key error 'root'](https://bugs.launchpad.net/nova/+bug/1052085)
 
 ## discussion
 

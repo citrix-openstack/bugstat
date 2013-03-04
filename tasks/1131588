@@ -1,1 +1,1 @@
-{'status': u'In Progress', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1131588', 'title': u"virt drivers' resume_state_on_host_boot don't handle migrating instances"}
+{'status': u'Fix Committed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1131588', 'title': u"virt drivers' resume_state_on_host_boot don't handle migrating instances"}
