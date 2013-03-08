@@ -1,0 +1,1 @@
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1152401', 'title': u'xenapi:Detecting bad-volumes relies on 120 sec timeout'}

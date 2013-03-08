@@ -1,1 +1,1 @@
-{'status': u'In Progress', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1134493', 'title': u'Add retry on upload_vhd in xapi glance plugin'}
+{'status': u'Fix Committed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1134493', 'title': u'Add retry on upload_vhd in xapi glance plugin'}

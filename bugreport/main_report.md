@@ -1,15 +1,13 @@
 # Summary
 
-Fixed/Pending Ratio: 4 / 59
+Fixed/Pending Ratio: 5 / 61
 
-# nova  - `33`
+# nova  - `35`
 
-Fixed/Pending ratio: 2 / 33
+Fixed/Pending ratio: 3 / 35
 
 ## storage/disk
 
- * `1134493` [Add retry on upload_vhd in xapi glance plugin](https://bugs.launchpad.net/nova/+bug/1134493)
- * `1103158` [XenServer not cleaning up SM locks](https://bugs.launchpad.net/nova/+bug/1103158)
  * `1030108` [maybe a xenserver bug][Detaching a volume from a XenAPI instance fails if XenAPI thinks it is in use](https://bugs.launchpad.net/nova/+bug/1030108)
  * `1015423` [ping it][xenapi ImageTooLarge exception leaves VDI around](https://bugs.launchpad.net/nova/+bug/1015423)
  * `962144` [xenapi resize fails on image with external ramdisk and kernel](https://bugs.launchpad.net/nova/+bug/962144)
@@ -32,11 +30,23 @@ Fixed/Pending ratio: 2 / 33
  * `1073303` [xenapi finish_migration does not cleanup on failures](https://bugs.launchpad.net/nova/+bug/1073303)
  * `962097` [in xenapi migration plugin the vhd-util calls fail on kronos](https://bugs.launchpad.net/nova/+bug/962097)
 
+## new
+
+ * `1152401` [xenapi:Detecting bad-volumes relies on 120 sec timeout](https://bugs.launchpad.net/nova/+bug/1152401)
+ * `1152268` [XenAPI:Resize tempest test is failing (shrink problem)](https://bugs.launchpad.net/nova/+bug/1152268)
+ * `1148614` [Reboot with bad volume fails ungracefully](https://bugs.launchpad.net/nova/+bug/1148614)
+
 ## stale
 
  * `903282` [Instances spawned on XenServer cannot communicate](https://bugs.launchpad.net/nova/+bug/903282)
  * `902663` [dom0 management traffic is not allowed to flow across a VLAN](https://bugs.launchpad.net/nova/+bug/902663)
  * `747394` [XenServer port needs to clear out vm-data/networking before issuing resetnetwork command](https://bugs.launchpad.net/nova/+bug/747394)
+
+## fixed
+
+ * `1134493` [Add retry on upload_vhd in xapi glance plugin](https://bugs.launchpad.net/nova/+bug/1134493)
+ * `1131588` [virt drivers' resume_state_on_host_boot don't handle migrating instances](https://bugs.launchpad.net/nova/+bug/1131588)
+ * `1052085` [Raw disk key error 'root'](https://bugs.launchpad.net/nova/+bug/1052085)
 
 ## metrics
 
@@ -47,11 +57,6 @@ Fixed/Pending ratio: 2 / 33
 
  * `1026552` [is it valid?][XenAPI pool based migration should error when not shared storage](https://bugs.launchpad.net/nova/+bug/1026552)
  * `1026153` [is it valid?][Need to deal with XenAPI pool master election](https://bugs.launchpad.net/nova/+bug/1026153)
-
-## fixed
-
- * `1131588` [virt drivers' resume_state_on_host_boot don't handle migrating instances](https://bugs.launchpad.net/nova/+bug/1131588)
- * `1052085` [Raw disk key error 'root'](https://bugs.launchpad.net/nova/+bug/1052085)
 
 ## missing implementation
 
