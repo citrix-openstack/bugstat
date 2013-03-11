@@ -65,6 +65,8 @@ categories = {
     902663: STALE,
     813793: MINOR,
     747394: STALE,
+    1095095: NONXEN,
+    1095410: NONXEN,
 }
 
 REVIEW = 'review'
@@ -102,7 +104,9 @@ class Task(object):
 
     @property
     def category(self):
-        if self.status in ['Fix Released', 'Fix Committed']:
+        if categories.get(self.number) == NONXEN:
+            return NONXEN
+        elif self.status in ['Fix Released', 'Fix Committed']:
             return FIXED
         return categories.get(self.number, NEW)
 
@@ -208,9 +212,10 @@ def main():
             )
         )
 
+    relevant_tasks = [task for task in task_db.values() if task.relevant]
     print "# Summary"
     print ""
-    print "Fixed/Pending Ratio:", len([t for t in task_db.values() if t.fixed]), "/", len(task_db)
+    print "Fixed/Pending Ratio:", len([t for t in relevant_tasks if t.fixed]), "/", len(relevant_tasks)
     print ""
 
     for tasklist in tasklists:

@@ -1,6 +1,6 @@
 # Summary
 
-Fixed/Pending Ratio: 5 / 59
+Fixed/Pending Ratio: 4 / 56
 
 # nova  - `35`
 
@@ -109,16 +109,15 @@ Fixed/Pending ratio: 0 / 1
 
  * `1055399` [windows image upload on xen host results in sr scan failure](https://bugs.launchpad.net/glance/+bug/1055399)
 
-# openstack-manuals  - `18`
+# openstack-manuals  - `16`
 
-Fixed/Pending ratio: 1 / 18
+Fixed/Pending ratio: 0 / 16
 
 ## new
 
  * `1106421` [grizzly:allow vm disk driver to be chosen per image](https://bugs.launchpad.net/openstack-manuals/+bug/1106421)
  * `1106405` [grizzly:xenapi:Add support for different image upload drivers](https://bugs.launchpad.net/openstack-manuals/+bug/1106405)
  * `1095506` [grizzly:add configdrive support for xenapi](https://bugs.launchpad.net/openstack-manuals/+bug/1095506)
- * `1095095` [Configuring for resize with KVM](https://bugs.launchpad.net/openstack-manuals/+bug/1095095)
  * `1026745` [Quantum docs should describe XenAPI setup](https://bugs.launchpad.net/openstack-manuals/+bug/1026745)
  * `1026742` [Add hints on troubleshooting XenAPI deployments](https://bugs.launchpad.net/openstack-manuals/+bug/1026742)
  * `1026693` [Need to document Nova-volume on XenAPI](https://bugs.launchpad.net/openstack-manuals/+bug/1026693)
@@ -132,8 +131,4 @@ Fixed/Pending ratio: 1 / 18
  * `1023417` [Need better example configuration for XenServer](https://bugs.launchpad.net/openstack-manuals/+bug/1023417)
  * `1022554` [Need docs for Xen in VLAN mode, not multi-host](https://bugs.launchpad.net/openstack-manuals/+bug/1022554)
  * `1021224` [XenServer install docs should not rely on DevStack](https://bugs.launchpad.net/openstack-manuals/+bug/1021224)
-
-## fixed
-
- * `1095410` [Maven Plugin 1.6.2+:PDF Chapter TOCs number incorrectly](https://bugs.launchpad.net/openstack-manuals/+bug/1095410)
 
