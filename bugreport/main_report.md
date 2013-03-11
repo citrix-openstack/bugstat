@@ -2,9 +2,9 @@
 
 Fixed/Pending Ratio: 4 / 56
 
-# nova  - `35`
+# nova  - `34`
 
-Fixed/Pending ratio: 3 / 35
+Fixed/Pending ratio: 3 / 34
 
 ## storage/disk
 
@@ -12,7 +12,6 @@ Fixed/Pending ratio: 3 / 35
  * `1015423` [ping it][xenapi ImageTooLarge exception leaves VDI around](https://bugs.launchpad.net/nova/+bug/1015423)
  * `962144` [xenapi resize fails on image with external ramdisk and kernel](https://bugs.launchpad.net/nova/+bug/962144)
  * `952816` [xenapi resize fails on Essex4 while using COW](https://bugs.launchpad.net/nova/+bug/952816)
- * `929062` [/images filling up on xenserver host](https://bugs.launchpad.net/nova/+bug/929062)
  * `914484` [Boot from ISO is different in XS/KVM](https://bugs.launchpad.net/nova/+bug/914484)
  * `912684` [Xen instances:support for randomly-named and uncompressed images](https://bugs.launchpad.net/nova/+bug/912684)
  * `903445` [New xapi backend for Local Storage ISO SR](https://bugs.launchpad.net/nova/+bug/903445)
@@ -109,9 +108,9 @@ Fixed/Pending ratio: 0 / 1
 
  * `1055399` [windows image upload on xen host results in sr scan failure](https://bugs.launchpad.net/glance/+bug/1055399)
 
-# openstack-manuals  - `16`
+# openstack-manuals  - `17`
 
-Fixed/Pending ratio: 0 / 16
+Fixed/Pending ratio: 0 / 17
 
 ## new
 
@@ -131,4 +130,8 @@ Fixed/Pending ratio: 0 / 16
  * `1023417` [Need better example configuration for XenServer](https://bugs.launchpad.net/openstack-manuals/+bug/1023417)
  * `1022554` [Need docs for Xen in VLAN mode, not multi-host](https://bugs.launchpad.net/openstack-manuals/+bug/1022554)
  * `1021224` [XenServer install docs should not rely on DevStack](https://bugs.launchpad.net/openstack-manuals/+bug/1021224)
+
+## storage/disk
+
+ * `929062` [/images filling up on xenserver host](https://bugs.launchpad.net/openstack-manuals/+bug/929062)
 
