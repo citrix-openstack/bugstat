@@ -1,6 +1,6 @@
 # Summary
 
-Fixed/Pending Ratio: 5 / 61
+Fixed/Pending Ratio: 5 / 59
 
 # nova  - `35`
 
@@ -8,7 +8,7 @@ Fixed/Pending ratio: 3 / 35
 
 ## storage/disk
 
- * `1030108` [maybe a xenserver bug][Detaching a volume from a XenAPI instance fails if XenAPI thinks it is in use](https://bugs.launchpad.net/nova/+bug/1030108)
+ * `1030108` [maybe a xenserver bug][Detaching a volume from a XenAPI instance fails if it is in use](https://bugs.launchpad.net/nova/+bug/1030108)
  * `1015423` [ping it][xenapi ImageTooLarge exception leaves VDI around](https://bugs.launchpad.net/nova/+bug/1015423)
  * `962144` [xenapi resize fails on image with external ramdisk and kernel](https://bugs.launchpad.net/nova/+bug/962144)
  * `952816` [xenapi resize fails on Essex4 while using COW](https://bugs.launchpad.net/nova/+bug/952816)
@@ -17,24 +17,18 @@ Fixed/Pending ratio: 3 / 35
  * `912684` [Xen instances:support for randomly-named and uncompressed images](https://bugs.launchpad.net/nova/+bug/912684)
  * `903445` [New xapi backend for Local Storage ISO SR](https://bugs.launchpad.net/nova/+bug/903445)
 
-## minor
+## new
 
- * `1074087` [Xen migration driver should use execvp](https://bugs.launchpad.net/nova/+bug/1074087)
- * `1024944` [XenServer:If file system is directly is on root device, auto_disk_configure does not work](https://bugs.launchpad.net/nova/+bug/1024944)
- * `934279` [Need more efficient implementation of get_num_instances() and instance_exists() in Xen and VMWare virt drivers](https://bugs.launchpad.net/nova/+bug/934279)
- * `813793` [Resize up from an instance with no local storage not handled properly in XenServer](https://bugs.launchpad.net/nova/+bug/813793)
+ * `1152713` [keypair extension doesn't work with xenapi and agent](https://bugs.launchpad.net/nova/+bug/1152713)
+ * `1152401` [xenapi:Detecting bad-volumes relies on 120 sec timeout](https://bugs.launchpad.net/nova/+bug/1152401)
+ * `1152268` [XenAPI:Resize tempest test is failing (shrink problem)](https://bugs.launchpad.net/nova/+bug/1152268)
+ * `1148614` [Reboot with bad volume fails ungracefully](https://bugs.launchpad.net/nova/+bug/1148614)
 
 ## migration
 
  * `1073306` [xenapi migrations don't apply security group filters](https://bugs.launchpad.net/nova/+bug/1073306)
  * `1073303` [xenapi finish_migration does not cleanup on failures](https://bugs.launchpad.net/nova/+bug/1073303)
  * `962097` [in xenapi migration plugin the vhd-util calls fail on kronos](https://bugs.launchpad.net/nova/+bug/962097)
-
-## new
-
- * `1152401` [xenapi:Detecting bad-volumes relies on 120 sec timeout](https://bugs.launchpad.net/nova/+bug/1152401)
- * `1152268` [XenAPI:Resize tempest test is failing (shrink problem)](https://bugs.launchpad.net/nova/+bug/1152268)
- * `1148614` [Reboot with bad volume fails ungracefully](https://bugs.launchpad.net/nova/+bug/1148614)
 
 ## stale
 
@@ -47,6 +41,12 @@ Fixed/Pending ratio: 3 / 35
  * `1134493` [Add retry on upload_vhd in xapi glance plugin](https://bugs.launchpad.net/nova/+bug/1134493)
  * `1131588` [virt drivers' resume_state_on_host_boot don't handle migrating instances](https://bugs.launchpad.net/nova/+bug/1131588)
  * `1052085` [Raw disk key error 'root'](https://bugs.launchpad.net/nova/+bug/1052085)
+
+## minor
+
+ * `1074087` [Xen migration driver should use execvp](https://bugs.launchpad.net/nova/+bug/1074087)
+ * `1024944` [XenServer:If file system is directly is on root device, auto_disk_configure does not work](https://bugs.launchpad.net/nova/+bug/1024944)
+ * `813793` [Resize up from an instance with no local storage not handled properly in XenServer](https://bugs.launchpad.net/nova/+bug/813793)
 
 ## metrics
 
@@ -109,14 +109,12 @@ Fixed/Pending ratio: 0 / 1
 
  * `1055399` [windows image upload on xen host results in sr scan failure](https://bugs.launchpad.net/glance/+bug/1055399)
 
-# openstack-manuals  - `20`
+# openstack-manuals  - `18`
 
-Fixed/Pending ratio: 1 / 20
+Fixed/Pending ratio: 1 / 18
 
 ## new
 
- * `1144507` [Document XenAPINFS Cinder driver](https://bugs.launchpad.net/openstack-manuals/+bug/1144507)
- * `1128554` [grizzly:allow NIC (vif) model to be chosen on per-image basis](https://bugs.launchpad.net/openstack-manuals/+bug/1128554)
  * `1106421` [grizzly:allow vm disk driver to be chosen per image](https://bugs.launchpad.net/openstack-manuals/+bug/1106421)
  * `1106405` [grizzly:xenapi:Add support for different image upload drivers](https://bugs.launchpad.net/openstack-manuals/+bug/1106405)
  * `1095506` [grizzly:add configdrive support for xenapi](https://bugs.launchpad.net/openstack-manuals/+bug/1095506)
