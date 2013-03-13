@@ -1,10 +1,10 @@
 # Summary
 
-Fixed/Pending Ratio: 4 / 56
+Fixed/Pending Ratio: 5 / 57
 
-# nova  - `34`
+# nova  - `36`
 
-Fixed/Pending ratio: 3 / 34
+Fixed/Pending ratio: 4 / 36
 
 ## storage/disk
 
@@ -18,10 +18,18 @@ Fixed/Pending ratio: 3 / 34
 
 ## new
 
+ * `1154253` [increased support for different compression types](https://bugs.launchpad.net/nova/+bug/1154253)
+ * `1152714` [XenAPI:Cannot do resize with devstack](https://bugs.launchpad.net/nova/+bug/1152714)
  * `1152713` [keypair extension doesn't work with xenapi and agent](https://bugs.launchpad.net/nova/+bug/1152713)
  * `1152401` [xenapi:Detecting bad-volumes relies on 120 sec timeout](https://bugs.launchpad.net/nova/+bug/1152401)
  * `1152268` [XenAPI:Resize tempest test is failing (shrink problem)](https://bugs.launchpad.net/nova/+bug/1152268)
+
+## fixed
+
  * `1148614` [Reboot with bad volume fails ungracefully](https://bugs.launchpad.net/nova/+bug/1148614)
+ * `1134493` [Add retry on upload_vhd in xapi glance plugin](https://bugs.launchpad.net/nova/+bug/1134493)
+ * `1131588` [virt drivers' resume_state_on_host_boot don't handle migrating instances](https://bugs.launchpad.net/nova/+bug/1131588)
+ * `1052085` [Raw disk key error 'root'](https://bugs.launchpad.net/nova/+bug/1052085)
 
 ## migration
 
@@ -35,15 +43,9 @@ Fixed/Pending ratio: 3 / 34
  * `902663` [dom0 management traffic is not allowed to flow across a VLAN](https://bugs.launchpad.net/nova/+bug/902663)
  * `747394` [XenServer port needs to clear out vm-data/networking before issuing resetnetwork command](https://bugs.launchpad.net/nova/+bug/747394)
 
-## fixed
-
- * `1134493` [Add retry on upload_vhd in xapi glance plugin](https://bugs.launchpad.net/nova/+bug/1134493)
- * `1131588` [virt drivers' resume_state_on_host_boot don't handle migrating instances](https://bugs.launchpad.net/nova/+bug/1131588)
- * `1052085` [Raw disk key error 'root'](https://bugs.launchpad.net/nova/+bug/1052085)
-
 ## minor
 
- * `1074087` [Xen migration driver should use execvp](https://bugs.launchpad.net/nova/+bug/1074087)
+ * `1074087` [XenApi migration driver should use execvp](https://bugs.launchpad.net/nova/+bug/1074087)
  * `1024944` [XenServer:If file system is directly is on root device, auto_disk_configure does not work](https://bugs.launchpad.net/nova/+bug/1024944)
  * `813793` [Resize up from an instance with no local storage not handled properly in XenServer](https://bugs.launchpad.net/nova/+bug/813793)
 
@@ -108,9 +110,9 @@ Fixed/Pending ratio: 0 / 1
 
  * `1055399` [windows image upload on xen host results in sr scan failure](https://bugs.launchpad.net/glance/+bug/1055399)
 
-# openstack-manuals  - `17`
+# openstack-manuals  - `16`
 
-Fixed/Pending ratio: 0 / 17
+Fixed/Pending ratio: 0 / 16
 
 ## new
 
@@ -130,8 +132,4 @@ Fixed/Pending ratio: 0 / 17
  * `1023417` [Need better example configuration for XenServer](https://bugs.launchpad.net/openstack-manuals/+bug/1023417)
  * `1022554` [Need docs for Xen in VLAN mode, not multi-host](https://bugs.launchpad.net/openstack-manuals/+bug/1022554)
  * `1021224` [XenServer install docs should not rely on DevStack](https://bugs.launchpad.net/openstack-manuals/+bug/1021224)
-
-## storage/disk
-
- * `929062` [/images filling up on xenserver host](https://bugs.launchpad.net/openstack-manuals/+bug/929062)
 

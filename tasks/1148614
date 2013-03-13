@@ -1,1 +1,1 @@
-{'status': u'In Progress', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1148614', 'title': u'Reboot with bad volume fails ungracefully'}
+{'status': u'Fix Committed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1148614', 'title': u'Reboot with bad volume fails ungracefully'}

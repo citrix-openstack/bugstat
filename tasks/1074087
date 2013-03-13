@@ -1,1 +1,1 @@
-{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1074087', 'title': u'Xen migration driver should use execvp'}
+{'status': u'New', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1074087', 'title': u'XenApi migration driver should use execvp'}
