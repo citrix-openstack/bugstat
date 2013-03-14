@@ -1,1 +1,1 @@
-{'status': u'New', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1152268', 'title': u'XenAPI:Resize tempest test is failing (shrink problem)'}
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1152268', 'title': u'XenAPI:Resize tempest test is failing (shrink problem)'}

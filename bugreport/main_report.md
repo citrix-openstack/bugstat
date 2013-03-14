@@ -1,35 +1,30 @@
 # Summary
 
-Fixed/Pending Ratio: 5 / 57
+Fixed/Pending Ratio: 4 / 55
 
-# nova  - `36`
+# nova  - `34`
 
-Fixed/Pending ratio: 4 / 36
+Fixed/Pending ratio: 3 / 34
+
+## new
+
+ * `1155113` [xenapi:ImageTooLarge for instances with 0 disk size](https://bugs.launchpad.net/nova/+bug/1155113)
+ * `1155068` [xenapi:errors when resizing down previously large instance](https://bugs.launchpad.net/nova/+bug/1155068)
+ * `1155066` [xenapi:resize to size too small for disk fails badly](https://bugs.launchpad.net/nova/+bug/1155066)
+ * `1154731` [xenserver boot from iso broken](https://bugs.launchpad.net/nova/+bug/1154731)
+ * `1154253` [increased support for different compression types](https://bugs.launchpad.net/nova/+bug/1154253)
+ * `1152713` [keypair extension doesn't work with xenapi and agent](https://bugs.launchpad.net/nova/+bug/1152713)
+ * `1152401` [xenapi:Detecting bad-volumes relies on 120 sec timeout](https://bugs.launchpad.net/nova/+bug/1152401)
+ * `1152268` [XenAPI:Resize tempest test is failing (shrink problem)](https://bugs.launchpad.net/nova/+bug/1152268)
 
 ## storage/disk
 
  * `1030108` [maybe a xenserver bug][Detaching a volume from a XenAPI instance fails if it is in use](https://bugs.launchpad.net/nova/+bug/1030108)
  * `1015423` [ping it][xenapi ImageTooLarge exception leaves VDI around](https://bugs.launchpad.net/nova/+bug/1015423)
- * `962144` [xenapi resize fails on image with external ramdisk and kernel](https://bugs.launchpad.net/nova/+bug/962144)
  * `952816` [xenapi resize fails on Essex4 while using COW](https://bugs.launchpad.net/nova/+bug/952816)
  * `914484` [Boot from ISO is different in XS/KVM](https://bugs.launchpad.net/nova/+bug/914484)
  * `912684` [Xen instances:support for randomly-named and uncompressed images](https://bugs.launchpad.net/nova/+bug/912684)
  * `903445` [New xapi backend for Local Storage ISO SR](https://bugs.launchpad.net/nova/+bug/903445)
-
-## new
-
- * `1154253` [increased support for different compression types](https://bugs.launchpad.net/nova/+bug/1154253)
- * `1152714` [XenAPI:Cannot do resize with devstack](https://bugs.launchpad.net/nova/+bug/1152714)
- * `1152713` [keypair extension doesn't work with xenapi and agent](https://bugs.launchpad.net/nova/+bug/1152713)
- * `1152401` [xenapi:Detecting bad-volumes relies on 120 sec timeout](https://bugs.launchpad.net/nova/+bug/1152401)
- * `1152268` [XenAPI:Resize tempest test is failing (shrink problem)](https://bugs.launchpad.net/nova/+bug/1152268)
-
-## fixed
-
- * `1148614` [Reboot with bad volume fails ungracefully](https://bugs.launchpad.net/nova/+bug/1148614)
- * `1134493` [Add retry on upload_vhd in xapi glance plugin](https://bugs.launchpad.net/nova/+bug/1134493)
- * `1131588` [virt drivers' resume_state_on_host_boot don't handle migrating instances](https://bugs.launchpad.net/nova/+bug/1131588)
- * `1052085` [Raw disk key error 'root'](https://bugs.launchpad.net/nova/+bug/1052085)
 
 ## migration
 
@@ -37,17 +32,11 @@ Fixed/Pending ratio: 4 / 36
  * `1073303` [xenapi finish_migration does not cleanup on failures](https://bugs.launchpad.net/nova/+bug/1073303)
  * `962097` [in xenapi migration plugin the vhd-util calls fail on kronos](https://bugs.launchpad.net/nova/+bug/962097)
 
-## stale
+## fixed
 
- * `903282` [Instances spawned on XenServer cannot communicate](https://bugs.launchpad.net/nova/+bug/903282)
- * `902663` [dom0 management traffic is not allowed to flow across a VLAN](https://bugs.launchpad.net/nova/+bug/902663)
- * `747394` [XenServer port needs to clear out vm-data/networking before issuing resetnetwork command](https://bugs.launchpad.net/nova/+bug/747394)
-
-## minor
-
- * `1074087` [XenApi migration driver should use execvp](https://bugs.launchpad.net/nova/+bug/1074087)
- * `1024944` [XenServer:If file system is directly is on root device, auto_disk_configure does not work](https://bugs.launchpad.net/nova/+bug/1024944)
- * `813793` [Resize up from an instance with no local storage not handled properly in XenServer](https://bugs.launchpad.net/nova/+bug/813793)
+ * `1148614` [Reboot with bad volume fails ungracefully](https://bugs.launchpad.net/nova/+bug/1148614)
+ * `1134493` [Add retry on upload_vhd in xapi glance plugin](https://bugs.launchpad.net/nova/+bug/1134493)
+ * `1131588` [virt drivers' resume_state_on_host_boot don't handle migrating instances](https://bugs.launchpad.net/nova/+bug/1131588)
 
 ## metrics
 
@@ -58,6 +47,16 @@ Fixed/Pending ratio: 4 / 36
 
  * `1026552` [is it valid?][XenAPI pool based migration should error when not shared storage](https://bugs.launchpad.net/nova/+bug/1026552)
  * `1026153` [is it valid?][Need to deal with XenAPI pool master election](https://bugs.launchpad.net/nova/+bug/1026153)
+
+## stale
+
+ * `903282` [Instances spawned on XenServer cannot communicate](https://bugs.launchpad.net/nova/+bug/903282)
+ * `747394` [XenServer port needs to clear out vm-data/networking before issuing resetnetwork command](https://bugs.launchpad.net/nova/+bug/747394)
+
+## minor
+
+ * `1074087` [XenApi migration driver should use execvp](https://bugs.launchpad.net/nova/+bug/1074087)
+ * `1024944` [XenServer:If file system is directly is on root device, auto_disk_configure does not work](https://bugs.launchpad.net/nova/+bug/1024944)
 
 ## missing implementation
 
@@ -71,10 +70,6 @@ Fixed/Pending ratio: 4 / 36
 ## instance spawn
 
  * `1061062` [Asynchronous errors can only be reported if instance is in ERROR](https://bugs.launchpad.net/nova/+bug/1061062)
-
-## qabug
-
- * `1037516` [Over time XenAPI driver eventuall fills up Dom0 disk](https://bugs.launchpad.net/nova/+bug/1037516)
 
 ## networking
 
