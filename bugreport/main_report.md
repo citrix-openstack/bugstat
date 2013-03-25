@@ -1,19 +1,21 @@
 # Summary
 
-Fixed/Pending Ratio: 4 / 55
+Fixed/Pending Ratio: 0 / 50
 
-# nova  - `34`
+# nova  - `30`
 
-Fixed/Pending ratio: 3 / 34
+Fixed/Pending ratio: 0 / 30
 
 ## new
 
+ * `1158603` [xenapi's check_can_live_migrate_destination should not return None](https://bugs.launchpad.net/nova/+bug/1158603)
+ * `1157695` [xenapi:RPM parted dependency](https://bugs.launchpad.net/nova/+bug/1157695)
+ * `1157389` [xenapi:console for rescue vm is broken](https://bugs.launchpad.net/nova/+bug/1157389)
+ * `1157211` [XenAPI depends on /sys/hypervisor/uuid - not readable across reboot](https://bugs.launchpad.net/nova/+bug/1157211)
  * `1155113` [xenapi:ImageTooLarge for instances with 0 disk size](https://bugs.launchpad.net/nova/+bug/1155113)
  * `1155068` [xenapi:errors when resizing down previously large instance](https://bugs.launchpad.net/nova/+bug/1155068)
  * `1155066` [xenapi:resize to size too small for disk fails badly](https://bugs.launchpad.net/nova/+bug/1155066)
  * `1154731` [xenserver boot from iso broken](https://bugs.launchpad.net/nova/+bug/1154731)
- * `1154253` [increased support for different compression types](https://bugs.launchpad.net/nova/+bug/1154253)
- * `1152713` [keypair extension doesn't work with xenapi and agent](https://bugs.launchpad.net/nova/+bug/1152713)
  * `1152401` [xenapi:Detecting bad-volumes relies on 120 sec timeout](https://bugs.launchpad.net/nova/+bug/1152401)
  * `1152268` [XenAPI:Resize tempest test is failing (shrink problem)](https://bugs.launchpad.net/nova/+bug/1152268)
 
@@ -21,27 +23,19 @@ Fixed/Pending ratio: 3 / 34
 
  * `1030108` [maybe a xenserver bug][Detaching a volume from a XenAPI instance fails if it is in use](https://bugs.launchpad.net/nova/+bug/1030108)
  * `1015423` [ping it][xenapi ImageTooLarge exception leaves VDI around](https://bugs.launchpad.net/nova/+bug/1015423)
- * `952816` [xenapi resize fails on Essex4 while using COW](https://bugs.launchpad.net/nova/+bug/952816)
  * `914484` [Boot from ISO is different in XS/KVM](https://bugs.launchpad.net/nova/+bug/914484)
  * `912684` [Xen instances:support for randomly-named and uncompressed images](https://bugs.launchpad.net/nova/+bug/912684)
  * `903445` [New xapi backend for Local Storage ISO SR](https://bugs.launchpad.net/nova/+bug/903445)
-
-## migration
-
- * `1073306` [xenapi migrations don't apply security group filters](https://bugs.launchpad.net/nova/+bug/1073306)
- * `1073303` [xenapi finish_migration does not cleanup on failures](https://bugs.launchpad.net/nova/+bug/1073303)
- * `962097` [in xenapi migration plugin the vhd-util calls fail on kronos](https://bugs.launchpad.net/nova/+bug/962097)
-
-## fixed
-
- * `1148614` [Reboot with bad volume fails ungracefully](https://bugs.launchpad.net/nova/+bug/1148614)
- * `1134493` [Add retry on upload_vhd in xapi glance plugin](https://bugs.launchpad.net/nova/+bug/1134493)
- * `1131588` [virt drivers' resume_state_on_host_boot don't handle migrating instances](https://bugs.launchpad.net/nova/+bug/1131588)
 
 ## metrics
 
  * `1015190` [is it valid?][arch_filter tracebacks with xenapi](https://bugs.launchpad.net/nova/+bug/1015190)
  * `954913` [xenapi host refresh not dealing with exceptions well when updating host stats](https://bugs.launchpad.net/nova/+bug/954913)
+
+## migration
+
+ * `1073306` [xenapi migrations don't apply security group filters](https://bugs.launchpad.net/nova/+bug/1073306)
+ * `1073303` [xenapi finish_migration does not cleanup on failures](https://bugs.launchpad.net/nova/+bug/1073303)
 
 ## pools
 
@@ -57,11 +51,6 @@ Fixed/Pending ratio: 3 / 34
 
  * `1074087` [XenApi migration driver should use execvp](https://bugs.launchpad.net/nova/+bug/1074087)
  * `1024944` [XenServer:If file system is directly is on root device, auto_disk_configure does not work](https://bugs.launchpad.net/nova/+bug/1024944)
-
-## missing implementation
-
- * `1100697` [libvirt should enable pae setting for Xen or KVM guest](https://bugs.launchpad.net/nova/+bug/1100697)
- * `1097980` [XenAPI should implement list_instance_uuids()](https://bugs.launchpad.net/nova/+bug/1097980)
 
 ## console
 
@@ -79,13 +68,13 @@ Fixed/Pending ratio: 3 / 34
 
  * `816406` [Service stats needs to be unified across virt layer](https://bugs.launchpad.net/nova/+bug/816406)
 
-# cinder  - `1`
+## missing implementation
 
-Fixed/Pending ratio: 1 / 1
+ * `1100697` [libvirt should enable pae setting for Xen or KVM guest](https://bugs.launchpad.net/nova/+bug/1100697)
 
-## fixed
+# cinder  - `0`
 
- * `1131291` [XenAPINFS:Volume always uploaded as vhd/ovf](https://bugs.launchpad.net/cinder/+bug/1131291)
+No bugs found
 
 # quantum  - `3`
 
