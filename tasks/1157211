@@ -1,0 +1,1 @@
+{'status': u'Fix Committed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1157211', 'title': u'XenAPI depends on /sys/hypervisor/uuid - not readable across reboot'}

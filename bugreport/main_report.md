@@ -1,17 +1,14 @@
 # Summary
 
-Fixed/Pending Ratio: 0 / 50
+Fixed/Pending Ratio: 4 / 51
 
-# nova  - `30`
+# nova  - `31`
 
-Fixed/Pending ratio: 0 / 30
+Fixed/Pending ratio: 4 / 31
 
 ## new
 
- * `1158603` [xenapi's check_can_live_migrate_destination should not return None](https://bugs.launchpad.net/nova/+bug/1158603)
- * `1157695` [xenapi:RPM parted dependency](https://bugs.launchpad.net/nova/+bug/1157695)
- * `1157389` [xenapi:console for rescue vm is broken](https://bugs.launchpad.net/nova/+bug/1157389)
- * `1157211` [XenAPI depends on /sys/hypervisor/uuid - not readable across reboot](https://bugs.launchpad.net/nova/+bug/1157211)
+ * `1160323` [Cannot block migrate in xenapi with iSCSI cinder volumes attached](https://bugs.launchpad.net/nova/+bug/1160323)
  * `1155113` [xenapi:ImageTooLarge for instances with 0 disk size](https://bugs.launchpad.net/nova/+bug/1155113)
  * `1155068` [xenapi:errors when resizing down previously large instance](https://bugs.launchpad.net/nova/+bug/1155068)
  * `1155066` [xenapi:resize to size too small for disk fails badly](https://bugs.launchpad.net/nova/+bug/1155066)
@@ -26,6 +23,13 @@ Fixed/Pending ratio: 0 / 30
  * `914484` [Boot from ISO is different in XS/KVM](https://bugs.launchpad.net/nova/+bug/914484)
  * `912684` [Xen instances:support for randomly-named and uncompressed images](https://bugs.launchpad.net/nova/+bug/912684)
  * `903445` [New xapi backend for Local Storage ISO SR](https://bugs.launchpad.net/nova/+bug/903445)
+
+## fixed
+
+ * `1158603` [xenapi's check_can_live_migrate_destination should not return None](https://bugs.launchpad.net/nova/+bug/1158603)
+ * `1157695` [xenapi:RPM parted dependency](https://bugs.launchpad.net/nova/+bug/1157695)
+ * `1157389` [xenapi:console for rescue vm is broken](https://bugs.launchpad.net/nova/+bug/1157389)
+ * `1157211` [XenAPI depends on /sys/hypervisor/uuid - not readable across reboot](https://bugs.launchpad.net/nova/+bug/1157211)
 
 ## metrics
 

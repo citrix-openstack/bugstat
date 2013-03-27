@@ -1,0 +1,1 @@
+{'status': u'Fix Committed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1158603', 'title': u"xenapi's check_can_live_migrate_destination should not return None"}
