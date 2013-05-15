@@ -1,35 +1,45 @@
 # Summary
 
-Fixed/Pending Ratio: 4 / 51
+Fixed/Pending Ratio: 10 / 58
 
-# nova  - `31`
+# nova  - `39`
 
-Fixed/Pending ratio: 4 / 31
+Fixed/Pending ratio: 10 / 39
 
 ## new
 
- * `1160323` [Cannot block migrate in xenapi with iSCSI cinder volumes attached](https://bugs.launchpad.net/nova/+bug/1160323)
+ * `1178639` [xenapi spawn clean up vdi logic needs work](https://bugs.launchpad.net/nova/+bug/1178639)
+ * `1178223` [xenapi:checking agent by default is confusing](https://bugs.launchpad.net/nova/+bug/1178223)
+ * `1177993` [poll_rebooting_instances hits DB directly  in Xen/VMware virt drivers](https://bugs.launchpad.net/nova/+bug/1177993)
+ * `1177005` [Xen driver not reporting progress in notifications](https://bugs.launchpad.net/nova/+bug/1177005)
+ * `1175383` [Default 'tiny' instance_type has wrong root_gb](https://bugs.launchpad.net/nova/+bug/1175383)
+ * `1169769` [start guests on host reboot](https://bugs.launchpad.net/nova/+bug/1169769)
+ * `1162973` [XCP resource pool - unable to migrate instances](https://bugs.launchpad.net/nova/+bug/1162973)
+ * `1161619` [Can't create nova aggregate on Xen](https://bugs.launchpad.net/nova/+bug/1161619)
+ * `1161471` [xenapi:guest kernel not cleaned up](https://bugs.launchpad.net/nova/+bug/1161471)
  * `1155113` [xenapi:ImageTooLarge for instances with 0 disk size](https://bugs.launchpad.net/nova/+bug/1155113)
- * `1155068` [xenapi:errors when resizing down previously large instance](https://bugs.launchpad.net/nova/+bug/1155068)
  * `1155066` [xenapi:resize to size too small for disk fails badly](https://bugs.launchpad.net/nova/+bug/1155066)
- * `1154731` [xenserver boot from iso broken](https://bugs.launchpad.net/nova/+bug/1154731)
  * `1152401` [xenapi:Detecting bad-volumes relies on 120 sec timeout](https://bugs.launchpad.net/nova/+bug/1152401)
  * `1152268` [XenAPI:Resize tempest test is failing (shrink problem)](https://bugs.launchpad.net/nova/+bug/1152268)
 
-## storage/disk
-
- * `1030108` [maybe a xenserver bug][Detaching a volume from a XenAPI instance fails if it is in use](https://bugs.launchpad.net/nova/+bug/1030108)
- * `1015423` [ping it][xenapi ImageTooLarge exception leaves VDI around](https://bugs.launchpad.net/nova/+bug/1015423)
- * `914484` [Boot from ISO is different in XS/KVM](https://bugs.launchpad.net/nova/+bug/914484)
- * `912684` [Xen instances:support for randomly-named and uncompressed images](https://bugs.launchpad.net/nova/+bug/912684)
- * `903445` [New xapi backend for Local Storage ISO SR](https://bugs.launchpad.net/nova/+bug/903445)
-
 ## fixed
 
+ * `1170237` [cannot reboot instances when in rescue mode](https://bugs.launchpad.net/nova/+bug/1170237)
+ * `1167515` [xenapi:_connect_volume exception handler not eventlet safe](https://bugs.launchpad.net/nova/+bug/1167515)
+ * `1162029` [xenapi:nova_instance_uuid not set for root image](https://bugs.launchpad.net/nova/+bug/1162029)
+ * `1160323` [Cannot block migrate in xenapi with iSCSI cinder volumes attached](https://bugs.launchpad.net/nova/+bug/1160323)
  * `1158603` [xenapi's check_can_live_migrate_destination should not return None](https://bugs.launchpad.net/nova/+bug/1158603)
  * `1157695` [xenapi:RPM parted dependency](https://bugs.launchpad.net/nova/+bug/1157695)
  * `1157389` [xenapi:console for rescue vm is broken](https://bugs.launchpad.net/nova/+bug/1157389)
  * `1157211` [XenAPI depends on /sys/hypervisor/uuid - not readable across reboot](https://bugs.launchpad.net/nova/+bug/1157211)
+ * `1154731` [xenserver boot from iso broken](https://bugs.launchpad.net/nova/+bug/1154731)
+ * `1015423` [ping it][xenapi ImageTooLarge exception leaves VDI around](https://bugs.launchpad.net/nova/+bug/1015423)
+
+## storage/disk
+
+ * `1030108` [maybe a xenserver bug][Detaching a volume from a XenAPI instance fails if it is in use](https://bugs.launchpad.net/nova/+bug/1030108)
+ * `914484` [Boot from ISO is different in XS/KVM](https://bugs.launchpad.net/nova/+bug/914484)
+ * `912684` [Xen instances:support for randomly-named and uncompressed images](https://bugs.launchpad.net/nova/+bug/912684)
 
 ## metrics
 
@@ -40,16 +50,6 @@ Fixed/Pending ratio: 4 / 31
 
  * `1073306` [xenapi migrations don't apply security group filters](https://bugs.launchpad.net/nova/+bug/1073306)
  * `1073303` [xenapi finish_migration does not cleanup on failures](https://bugs.launchpad.net/nova/+bug/1073303)
-
-## pools
-
- * `1026552` [is it valid?][XenAPI pool based migration should error when not shared storage](https://bugs.launchpad.net/nova/+bug/1026552)
- * `1026153` [is it valid?][Need to deal with XenAPI pool master election](https://bugs.launchpad.net/nova/+bug/1026153)
-
-## stale
-
- * `903282` [Instances spawned on XenServer cannot communicate](https://bugs.launchpad.net/nova/+bug/903282)
- * `747394` [XenServer port needs to clear out vm-data/networking before issuing resetnetwork command](https://bugs.launchpad.net/nova/+bug/747394)
 
 ## minor
 
@@ -68,6 +68,14 @@ Fixed/Pending ratio: 4 / 31
 
  * `1043886` [Firewall rules are not updated if you restart nova-compute](https://bugs.launchpad.net/nova/+bug/1043886)
 
+## pools
+
+ * `1026552` [is it valid?][XenAPI pool based migration should error when not shared storage](https://bugs.launchpad.net/nova/+bug/1026552)
+
+## stale
+
+ * `747394` [XenServer port needs to clear out vm-data/networking before issuing resetnetwork command](https://bugs.launchpad.net/nova/+bug/747394)
+
 ## discussion
 
  * `816406` [Service stats needs to be unified across virt layer](https://bugs.launchpad.net/nova/+bug/816406)
@@ -80,15 +88,14 @@ Fixed/Pending ratio: 4 / 31
 
 No bugs found
 
-# quantum  - `3`
+# quantum  - `2`
 
-Fixed/Pending ratio: 0 / 3
+Fixed/Pending ratio: 0 / 2
 
 ## new
 
  * `1005616` [Windows instances may not get correct port configuration as set by quantum](https://bugs.launchpad.net/quantum/+bug/1005616)
  * `994831` [ovs_quantum_plugin incompatibility with python 2.4](https://bugs.launchpad.net/quantum/+bug/994831)
- * `994774` [ovs_quantum_agent.py crashes on Citrix XCP because of old python version (2.4)](https://bugs.launchpad.net/quantum/+bug/994774)
 
 # glance  - `1`
 

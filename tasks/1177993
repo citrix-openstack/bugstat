@@ -1,0 +1,1 @@
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1177993', 'title': u'poll_rebooting_instances hits DB directly  in Xen/VMware virt drivers'}

@@ -1,1 +1,1 @@
-{'status': u'In Progress', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1015423', 'title': u'xenapi ImageTooLarge exception leaves VDI around'}
+{'status': u'Fix Committed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1015423', 'title': u'xenapi ImageTooLarge exception leaves VDI around'}

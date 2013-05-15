@@ -1,0 +1,1 @@
+{'status': u'Fix Committed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1162029', 'title': u'xenapi:nova_instance_uuid not set for root image'}

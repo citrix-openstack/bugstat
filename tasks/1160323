@@ -1,1 +1,1 @@
-{'status': u'In Progress', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1160323', 'title': u'Cannot block migrate in xenapi with iSCSI cinder volumes attached'}
+{'status': u'Fix Committed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1160323', 'title': u'Cannot block migrate in xenapi with iSCSI cinder volumes attached'}
