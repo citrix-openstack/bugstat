@@ -1,0 +1,1 @@
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1187330', 'title': u'nova-compute does not respect reserved memory for dom0 when using libvirt/XEN'}

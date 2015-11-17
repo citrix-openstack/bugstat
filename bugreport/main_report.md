@@ -1,101 +1,98 @@
 # Summary
 
-Fixed/Pending Ratio: 10 / 58
+Fixed/Pending Ratio: 3 / 65
 
-# nova  - `39`
+# nova  - `50`
 
-Fixed/Pending ratio: 10 / 39
+Fixed/Pending ratio: 2 / 50
 
 ## new
 
- * `1178639` [xenapi spawn clean up vdi logic needs work](https://bugs.launchpad.net/nova/+bug/1178639)
- * `1178223` [xenapi:checking agent by default is confusing](https://bugs.launchpad.net/nova/+bug/1178223)
- * `1177993` [poll_rebooting_instances hits DB directly  in Xen/VMware virt drivers](https://bugs.launchpad.net/nova/+bug/1177993)
- * `1177005` [Xen driver not reporting progress in notifications](https://bugs.launchpad.net/nova/+bug/1177005)
- * `1175383` [Default 'tiny' instance_type has wrong root_gb](https://bugs.launchpad.net/nova/+bug/1175383)
+ * `1516765` [xenapi:volume_utils._parse_volume_info can leak connection password via StorageError](https://bugs.launchpad.net/nova/+bug/1516765)
+ * `1516721` [XenAPI:Race condition in test_get_console_output_with_unlimited_size](https://bugs.launchpad.net/nova/+bug/1516721)
+ * `1515672` [XenServer attach second Cinder volume failed](https://bugs.launchpad.net/nova/+bug/1515672)
+ * `1512955` [Race condition in nova/neutron when booting instance with xen driver](https://bugs.launchpad.net/nova/+bug/1512955)
+ * `1507424` [Hypervisor type of xen should be XenServer](https://bugs.launchpad.net/nova/+bug/1507424)
+ * `1502929` [XenServer 6.5 fails to attach to Cinder volumes](https://bugs.launchpad.net/nova/+bug/1502929)
+ * `1492034` [nova network FlatDHCP (kilo) on XenServer 6.5  ebtables rules](https://bugs.launchpad.net/nova/+bug/1492034)
+ * `1490238` [Configdrive fails to properly display within Windows Guest (Xenapi)](https://bugs.launchpad.net/nova/+bug/1490238)
+ * `1488753` [ephemeral and root device filesystems should be labeled](https://bugs.launchpad.net/nova/+bug/1488753)
+ * `1482403` [bdm for swap created with no regard for previous](https://bugs.launchpad.net/nova/+bug/1482403)
+ * `1481705` [xenapi:xen tools scripts needs to be tested](https://bugs.launchpad.net/nova/+bug/1481705)
+ * `1481689` [xenapi:cached images should be cleaned up by time](https://bugs.launchpad.net/nova/+bug/1481689)
+ * `1477684` [Instance recreate is not supported](https://bugs.launchpad.net/nova/+bug/1477684)
+ * `1468762` [lxc hypervisor does not support PCI devices](https://bugs.launchpad.net/nova/+bug/1468762)
+ * `1461642` [libvirt-xen:Race between nova and a Xen script for updating the iptables](https://bugs.launchpad.net/nova/+bug/1461642)
+ * `1450465` [vif name too long when libvirt driver trying to create XEN HVM domain](https://bugs.launchpad.net/nova/+bug/1450465)
+ * `1445443` [volume access I/O error with libvirt-xen and iscsi](https://bugs.launchpad.net/nova/+bug/1445443)
+ * `1443898` [TestVolumeBootPattern.test_volume_boot_pattern fail with libvirt-xen](https://bugs.launchpad.net/nova/+bug/1443898)
+ * `1422342` [xenapi:soft reboot should attempt hard reboot on failure](https://bugs.launchpad.net/nova/+bug/1422342)
+ * `1414529` [eval being used in session.py](https://bugs.launchpad.net/nova/+bug/1414529)
+ * `1413475` [cannot get aggregate metadata information when nova-compute starts using xen](https://bugs.launchpad.net/nova/+bug/1413475)
+ * `1383899` [xenapi auto disk config uses wrong size value when booting from volume](https://bugs.launchpad.net/nova/+bug/1383899)
+ * `1374001` [Xenserver glance plugin uses unsafe SSL connection](https://bugs.launchpad.net/nova/+bug/1374001)
+ * `1368073` [[Security-NIST]SimpleDH in nova/virt/xenapi/agent.py does not fit the NIST](https://bugs.launchpad.net/nova/+bug/1368073)
+ * `1326156` [VHD image overhead (xenserver) not large enough](https://bugs.launchpad.net/nova/+bug/1326156)
+ * `1323722` [libvirt Xen have to use "file" disk driver in the case of compute node doesn't support blktap.](https://bugs.launchpad.net/nova/+bug/1323722)
+ * `1318544` [XenServer - Nova-Compute StorageError Waiting for device](https://bugs.launchpad.net/nova/+bug/1318544)
+ * `1309580` [xenserver driver raises NotImplementedError for reset_network](https://bugs.launchpad.net/nova/+bug/1309580)
+ * `1302831` [hacking/flake8 skips most xenapi plugins](https://bugs.launchpad.net/nova/+bug/1302831)
+ * `1294587` [Old style Images with vhd files tarred along with a folder are not handled in nova xen plugin](https://bugs.launchpad.net/nova/+bug/1294587)
+ * `1290455` [libvirt inject_data assumes instance with kernel_id doesn't contain a partition table](https://bugs.launchpad.net/nova/+bug/1290455)
+ * `1275875` [Virt drivers should use standard image properties](https://bugs.launchpad.net/nova/+bug/1275875)
+ * `1253571` [libivrt+xen does not support copy on write images](https://bugs.launchpad.net/nova/+bug/1253571)
+ * `1245560` [vcpu_weight in flavor-create API is not validated](https://bugs.launchpad.net/nova/+bug/1245560)
+ * `1224587` [xenapi:secgroups are not in place for a short duration after live-migration](https://bugs.launchpad.net/nova/+bug/1224587)
+ * `1223396` [Rescue does not provide access to ephemeral disk](https://bugs.launchpad.net/nova/+bug/1223396)
+ * `1220621` [xenapi:network bridge not created on hypervisor](https://bugs.launchpad.net/nova/+bug/1220621)
+ * `1218528` [openvswitch-nova in XenServer doesn't work with bonding](https://bugs.launchpad.net/nova/+bug/1218528)
+ * `1215928` [xenapi:image size calculation ignores container_format](https://bugs.launchpad.net/nova/+bug/1215928)
+ * `1204165` [xenapi:vm_utils.ensure_free_mem does not take into account overheads](https://bugs.launchpad.net/nova/+bug/1204165)
+ * `1201863` [XenAPI Resize Fails with Migration Error:Failed to transfer vhd to new host](https://bugs.launchpad.net/nova/+bug/1201863)
+ * `1187330` [nova-compute does not respect reserved memory for dom0 when using libvirt/XEN](https://bugs.launchpad.net/nova/+bug/1187330)
+ * `1177005` [XenAPI driver not reporting progress in notifications](https://bugs.launchpad.net/nova/+bug/1177005)
  * `1169769` [start guests on host reboot](https://bugs.launchpad.net/nova/+bug/1169769)
- * `1162973` [XCP resource pool - unable to migrate instances](https://bugs.launchpad.net/nova/+bug/1162973)
- * `1161619` [Can't create nova aggregate on Xen](https://bugs.launchpad.net/nova/+bug/1161619)
  * `1161471` [xenapi:guest kernel not cleaned up](https://bugs.launchpad.net/nova/+bug/1161471)
- * `1155113` [xenapi:ImageTooLarge for instances with 0 disk size](https://bugs.launchpad.net/nova/+bug/1155113)
- * `1155066` [xenapi:resize to size too small for disk fails badly](https://bugs.launchpad.net/nova/+bug/1155066)
- * `1152401` [xenapi:Detecting bad-volumes relies on 120 sec timeout](https://bugs.launchpad.net/nova/+bug/1152401)
- * `1152268` [XenAPI:Resize tempest test is failing (shrink problem)](https://bugs.launchpad.net/nova/+bug/1152268)
 
 ## fixed
 
- * `1170237` [cannot reboot instances when in rescue mode](https://bugs.launchpad.net/nova/+bug/1170237)
- * `1167515` [xenapi:_connect_volume exception handler not eventlet safe](https://bugs.launchpad.net/nova/+bug/1167515)
- * `1162029` [xenapi:nova_instance_uuid not set for root image](https://bugs.launchpad.net/nova/+bug/1162029)
- * `1160323` [Cannot block migrate in xenapi with iSCSI cinder volumes attached](https://bugs.launchpad.net/nova/+bug/1160323)
- * `1158603` [xenapi's check_can_live_migrate_destination should not return None](https://bugs.launchpad.net/nova/+bug/1158603)
- * `1157695` [xenapi:RPM parted dependency](https://bugs.launchpad.net/nova/+bug/1157695)
- * `1157389` [xenapi:console for rescue vm is broken](https://bugs.launchpad.net/nova/+bug/1157389)
- * `1157211` [XenAPI depends on /sys/hypervisor/uuid - not readable across reboot](https://bugs.launchpad.net/nova/+bug/1157211)
- * `1154731` [xenserver boot from iso broken](https://bugs.launchpad.net/nova/+bug/1154731)
- * `1015423` [ping it][xenapi ImageTooLarge exception leaves VDI around](https://bugs.launchpad.net/nova/+bug/1015423)
+ * `1503423` [Build failures:device_id assigned as int instead of expected string](https://bugs.launchpad.net/nova/+bug/1503423)
+ * `1481693` [xenapi:xentool - cache destroy script is broken](https://bugs.launchpad.net/nova/+bug/1481693)
 
 ## storage/disk
 
- * `1030108` [maybe a xenserver bug][Detaching a volume from a XenAPI instance fails if it is in use](https://bugs.launchpad.net/nova/+bug/1030108)
- * `914484` [Boot from ISO is different in XS/KVM](https://bugs.launchpad.net/nova/+bug/914484)
- * `912684` [Xen instances:support for randomly-named and uncompressed images](https://bugs.launchpad.net/nova/+bug/912684)
-
-## metrics
-
- * `1015190` [is it valid?][arch_filter tracebacks with xenapi](https://bugs.launchpad.net/nova/+bug/1015190)
- * `954913` [xenapi host refresh not dealing with exceptions well when updating host stats](https://bugs.launchpad.net/nova/+bug/954913)
-
-## migration
-
- * `1073306` [xenapi migrations don't apply security group filters](https://bugs.launchpad.net/nova/+bug/1073306)
- * `1073303` [xenapi finish_migration does not cleanup on failures](https://bugs.launchpad.net/nova/+bug/1073303)
-
-## minor
-
- * `1074087` [XenApi migration driver should use execvp](https://bugs.launchpad.net/nova/+bug/1074087)
- * `1024944` [XenServer:If file system is directly is on root device, auto_disk_configure does not work](https://bugs.launchpad.net/nova/+bug/1024944)
-
-## console
-
- * `1004175` [review][XenAPI text console support](https://bugs.launchpad.net/nova/+bug/1004175)
-
-## instance spawn
-
- * `1061062` [Asynchronous errors can only be reported if instance is in ERROR](https://bugs.launchpad.net/nova/+bug/1061062)
-
-## networking
-
- * `1043886` [Firewall rules are not updated if you restart nova-compute](https://bugs.launchpad.net/nova/+bug/1043886)
+ * `912684` [XenAPI instances:support for randomly-named and uncompressed images](https://bugs.launchpad.net/nova/+bug/912684)
 
 ## pools
 
  * `1026552` [is it valid?][XenAPI pool based migration should error when not shared storage](https://bugs.launchpad.net/nova/+bug/1026552)
 
-## stale
-
- * `747394` [XenServer port needs to clear out vm-data/networking before issuing resetnetwork command](https://bugs.launchpad.net/nova/+bug/747394)
-
 ## discussion
 
  * `816406` [Service stats needs to be unified across virt layer](https://bugs.launchpad.net/nova/+bug/816406)
 
-## missing implementation
+# cinder  - `1`
 
- * `1100697` [libvirt should enable pae setting for Xen or KVM guest](https://bugs.launchpad.net/nova/+bug/1100697)
-
-# cinder  - `0`
-
-No bugs found
-
-# quantum  - `2`
-
-Fixed/Pending ratio: 0 / 2
+Fixed/Pending ratio: 0 / 1
 
 ## new
 
- * `1005616` [Windows instances may not get correct port configuration as set by quantum](https://bugs.launchpad.net/quantum/+bug/1005616)
- * `994831` [ovs_quantum_plugin incompatibility with python 2.4](https://bugs.launchpad.net/quantum/+bug/994831)
+ * `1480968` [Instance freezes after attaching a cinder volume on XenServer 6.5](https://bugs.launchpad.net/cinder/+bug/1480968)
+
+# quantum  - `8`
+
+Fixed/Pending ratio: 0 / 8
+
+## new
+
+ * `1495423` [Cannot get dom0's ovsdb monitor result](https://bugs.launchpad.net/neutron/+bug/1495423)
+ * `1493662` [Xen ovs-agent-plugin polling manager is reported as not active](https://bugs.launchpad.net/neutron/+bug/1493662)
+ * `1362301` [neutron.plugins.openvswitch.agent.ovs_neutron_agent fails to configure bridges](https://bugs.launchpad.net/neutron/+bug/1362301)
+ * `1328524` [to determine ovs version are not using rootwrap](https://bugs.launchpad.net/neutron/+bug/1328524)
+ * `1269805` [XenServer 6.2 OVS problem](https://bugs.launchpad.net/neutron/+bug/1269805)
+ * `1268955` [OVS agent updates the wrong port when using Xen + Neutron with HVM or PVHVM](https://bugs.launchpad.net/neutron/+bug/1268955)
+ * `1264505` [XenServer:OVS agent fail to start on slave host](https://bugs.launchpad.net/neutron/+bug/1264505)
+ * `1245809` [Security groups cannot be used with XenAPI + OVS plugin](https://bugs.launchpad.net/neutron/+bug/1245809)
 
 # glance  - `1`
 
@@ -103,28 +100,20 @@ Fixed/Pending ratio: 0 / 1
 
 ## new
 
- * `1055399` [windows image upload on xen host results in sr scan failure](https://bugs.launchpad.net/glance/+bug/1055399)
+ * `1412394` [schema-image.json should contain the hypervisor specific parameters](https://bugs.launchpad.net/glance/+bug/1412394)
 
-# openstack-manuals  - `16`
+# openstack-manuals  - `5`
 
-Fixed/Pending ratio: 0 / 16
+Fixed/Pending ratio: 1 / 5
 
 ## new
 
- * `1106421` [grizzly:allow vm disk driver to be chosen per image](https://bugs.launchpad.net/openstack-manuals/+bug/1106421)
- * `1106405` [grizzly:xenapi:Add support for different image upload drivers](https://bugs.launchpad.net/openstack-manuals/+bug/1106405)
- * `1095506` [grizzly:add configdrive support for xenapi](https://bugs.launchpad.net/openstack-manuals/+bug/1095506)
- * `1026745` [Quantum docs should describe XenAPI setup](https://bugs.launchpad.net/openstack-manuals/+bug/1026745)
- * `1026742` [Add hints on troubleshooting XenAPI deployments](https://bugs.launchpad.net/openstack-manuals/+bug/1026742)
- * `1026693` [Need to document Nova-volume on XenAPI](https://bugs.launchpad.net/openstack-manuals/+bug/1026693)
- * `1026691` [Networking docs split for XenAPI and Libvirt too heavyweight](https://bugs.launchpad.net/openstack-manuals/+bug/1026691)
- * `1026689` [Need to better describe Network HA and XenAPI](https://bugs.launchpad.net/openstack-manuals/+bug/1026689)
- * `1026688` [XenAPI multi-nic](https://bugs.launchpad.net/openstack-manuals/+bug/1026688)
- * `1026683` [Document XenAPI boot-from-volume support](https://bugs.launchpad.net/openstack-manuals/+bug/1026683)
- * `1026682` [Document image creation and upload for XenAPI](https://bugs.launchpad.net/openstack-manuals/+bug/1026682)
- * `1026674` [Hypervisor flag descriptions are often KVM specific, need to include XenAPI](https://bugs.launchpad.net/openstack-manuals/+bug/1026674)
- * `1026671` [Expand "Post-Install Configuration" to include XenAPI](https://bugs.launchpad.net/openstack-manuals/+bug/1026671)
- * `1023417` [Need better example configuration for XenServer](https://bugs.launchpad.net/openstack-manuals/+bug/1023417)
- * `1022554` [Need docs for Xen in VLAN mode, not multi-host](https://bugs.launchpad.net/openstack-manuals/+bug/1022554)
- * `1021224` [XenServer install docs should not rely on DevStack](https://bugs.launchpad.net/openstack-manuals/+bug/1021224)
+ * `1403100` [XenAPI:Re-document boot from ISO](https://bugs.launchpad.net/openstack-manuals/+bug/1403100)
+ * `1363437` [xenapi:Attach original local disks during rescue](https://bugs.launchpad.net/openstack-manuals/+bug/1363437)
+ * `1254969` [xenapi:move session into new client module](https://bugs.launchpad.net/openstack-manuals/+bug/1254969)
+ * `1212687` [xenapi:through-dev raw-tgz image upload to glance](https://bugs.launchpad.net/openstack-manuals/+bug/1212687)
+
+## fixed
+
+ * `1492118` [OVS-agent:Introduce Ryu based OpenFlow implementation](https://bugs.launchpad.net/openstack-manuals/+bug/1492118)
 

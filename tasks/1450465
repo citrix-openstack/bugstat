@@ -1,0 +1,1 @@
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1450465', 'title': u'vif name too long when libvirt driver trying to create XEN HVM domain'}

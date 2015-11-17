@@ -1,0 +1,1 @@
+{'status': u'In Progress', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1323722', 'title': u'libvirt Xen have to use "file" disk driver in the case of compute node doesn\'t support blktap.'}

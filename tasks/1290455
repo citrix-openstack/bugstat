@@ -1,0 +1,1 @@
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1290455', 'title': u"libvirt inject_data assumes instance with kernel_id doesn't contain a partition table"}

@@ -1,0 +1,1 @@
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1224587', 'title': u'xenapi:secgroups are not in place for a short duration after live-migration'}

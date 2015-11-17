@@ -1,1 +1,1 @@
-{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/912684', 'title': u'Xen instances:support for randomly-named and uncompressed images'}
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/912684', 'title': u'XenAPI instances:support for randomly-named and uncompressed images'}

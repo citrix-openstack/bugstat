@@ -1,0 +1,1 @@
+{'status': u'In Progress', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1422342', 'title': u'xenapi:soft reboot should attempt hard reboot on failure'}

@@ -1,0 +1,1 @@
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1201863', 'title': u'XenAPI Resize Fails with Migration Error:Failed to transfer vhd to new host'}

@@ -1,0 +1,1 @@
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1204165', 'title': u'xenapi:vm_utils.ensure_free_mem does not take into account overheads'}

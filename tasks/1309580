@@ -1,0 +1,1 @@
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1309580', 'title': u'xenserver driver raises NotImplementedError for reset_network'}

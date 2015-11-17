@@ -1,0 +1,1 @@
+{'status': u'In Progress', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1516765', 'title': u'xenapi:volume_utils._parse_volume_info can leak connection password via StorageError'}

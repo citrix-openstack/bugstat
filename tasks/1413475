@@ -1,0 +1,1 @@
+{'status': u'In Progress', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1413475', 'title': u'cannot get aggregate metadata information when nova-compute starts using xen'}

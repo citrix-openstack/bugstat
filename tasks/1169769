@@ -1,1 +1,1 @@
-{'status': u'Incomplete', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1169769', 'title': u'start guests on host reboot'}
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1169769', 'title': u'start guests on host reboot'}

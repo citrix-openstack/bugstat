@@ -1,0 +1,1 @@
+{'status': u'Incomplete', 'web_link': u'https://bugs.launchpad.net/neutron/+bug/1245809', 'title': u'Security groups cannot be used with XenAPI + OVS plugin'}

@@ -1,0 +1,1 @@
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1215928', 'title': u'xenapi:image size calculation ignores container_format'}

@@ -1,0 +1,1 @@
+{'status': u'Fix Committed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1503423', 'title': u'Build failures:device_id assigned as int instead of expected string'}

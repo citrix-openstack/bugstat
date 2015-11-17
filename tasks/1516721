@@ -1,0 +1,1 @@
+{'status': u'In Progress', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1516721', 'title': u'XenAPI:Race condition in test_get_console_output_with_unlimited_size'}

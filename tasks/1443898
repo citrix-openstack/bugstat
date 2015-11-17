@@ -1,0 +1,1 @@
+{'status': u'In Progress', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1443898', 'title': u'TestVolumeBootPattern.test_volume_boot_pattern fail with libvirt-xen'}

@@ -1,1 +1,1 @@
-{'status': u'Triaged', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1177005', 'title': u'Xen driver not reporting progress in notifications'}
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1177005', 'title': u'XenAPI driver not reporting progress in notifications'}

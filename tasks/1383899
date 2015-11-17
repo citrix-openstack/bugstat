@@ -1,0 +1,1 @@
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1383899', 'title': u'xenapi auto disk config uses wrong size value when booting from volume'}

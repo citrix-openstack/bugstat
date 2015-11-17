@@ -1,0 +1,1 @@
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1294587', 'title': u'Old style Images with vhd files tarred along with a folder are not handled in nova xen plugin'}

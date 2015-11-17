@@ -1,0 +1,1 @@
+{'status': u'Confirmed', 'web_link': u'https://bugs.launchpad.net/nova/+bug/1245560', 'title': u'vcpu_weight in flavor-create API is not validated'}
